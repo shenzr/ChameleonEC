@@ -1,0 +1,3615 @@
+standalone mode share the same block format and stripe store format with HDFS mode
+standalone mode share the same block format and stripe store format with HDFS mode
+ecType = RS
+# of slaves: 19
+start to read the parameter.
+initCtx: connect to 172.31.0.202
+initCtx: connect to 172.31.0.203
+initCtx: connect to 172.31.0.204
+initCtx: connect to 172.31.0.205
+initCtx: connect to 172.31.0.206
+initCtx: connect to 172.31.0.207
+initCtx: connect to 172.31.0.208
+initCtx: connect to 172.31.0.209
+initCtx: connect to 172.31.0.210
+initCtx: connect to 172.31.0.211
+initCtx: connect to 172.31.0.212
+initCtx: connect to 172.31.0.213
+initCtx: connect to 172.31.0.214
+initCtx: connect to 172.31.0.215
+initCtx: connect to 172.31.0.216
+initCtx: connect to 172.31.0.217
+initCtx: connect to 172.31.0.218
+initCtx: connect to 172.31.0.219
+initCtx: connect to 172.31.0.220
+initCtx: connect to 172.31.0.201
+/root/ElasticRepair/conf/rsEncMat_10_14
+initializing rs utility
+RSUtil: RSEncMat:
+   1    0    0    0    0    0    0    0    0    0 
+   0    1    0    0    0    0    0    0    0    0 
+   0    0    1    0    0    0    0    0    0    0 
+   0    0    0    1    0    0    0    0    0    0 
+   0    0    0    0    1    0    0    0    0    0 
+   0    0    0    0    0    1    0    0    0    0 
+   0    0    0    0    0    0    1    0    0    0 
+   0    0    0    0    0    0    0    1    0    0 
+   0    0    0    0    0    0    0    0    1    0 
+   0    0    0    0    0    0    0    0    0    1 
+  71  167  122  186  173  157  221  152   61  170 
+ 167   71  186  122  157  173  152  221  170   61 
+ 122  186   71  167  221  152  173  157   93  150 
+ 186  122  167   71  152  221  157  173  150   93 
+finish the parameter reading
+Start to create the MetadataBase!
+creating metadata base for HDFS 
+HDFS_MetadataBasefinished!
+P11Coordinator::init() ends
+P11Coordinator::cmdDistributor() starts
+waiting for requests ...
+solveFullNodeRequest starts 
+multiNodeFlag = 0
+P16LinesCoordinator::parseFNRequest() from IP .205 starts
+all blks in fail node : 207
+stripe_49_file_k2 stripe_17_file_k1 stripe_188_file_k7 stripe_119_file_k7 stripe_225_file_k4 stripe_140_file_k5 stripe_30_file_m1 stripe_29_file_k10 stripe_110_file_k5 stripe_253_file_k10 stripe_78_file_m1 stripe_145_file_k3 stripe_14_file_k1 stripe_151_file_m3 stripe_170_file_m2 stripe_92_file_k9 stripe_68_file_m3 stripe_175_file_k1 stripe_257_file_k5 stripe_191_file_k2 stripe_105_file_m3 stripe_206_file_k4 stripe_190_file_m3 stripe_247_file_k3 stripe_104_file_k2 stripe_161_file_k7 stripe_66_file_k5 stripe_72_file_k6 stripe_28_file_m4 stripe_184_file_k7 stripe_156_file_k5 stripe_201_file_k2 stripe_250_file_k3 stripe_117_file_k2 stripe_10_file_m2 stripe_111_file_m1 stripe_198_file_k4 stripe_246_file_m3 stripe_219_file_k7 stripe_132_file_k10 stripe_76_file_k7 stripe_82_file_m3 stripe_98_file_m1 stripe_23_file_k10 stripe_73_file_k8 stripe_65_file_m3 stripe_24_file_m4 stripe_264_file_k3 stripe_172_file_m3 stripe_171_file_m1 stripe_93_file_k10 stripe_108_file_k5 stripe_113_file_m4 stripe_99_file_k8 stripe_214_file_m3 stripe_59_file_k9 stripe_268_file_k5 stripe_5_file_k2 stripe_160_file_k9 stripe_178_file_k3 stripe_187_file_k2 stripe_176_file_k5 stripe_165_file_k1 stripe_265_file_k2 stripe_274_file_k7 stripe_50_file_k6 stripe_103_file_m2 stripe_122_file_m3 stripe_91_file_k6 stripe_34_file_k5 stripe_83_file_k8 stripe_102_file_k5 stripe_229_file_k4 stripe_235_file_k10 stripe_84_file_m4 stripe_48_file_k9 stripe_266_file_k7 stripe_258_file_k9 stripe_96_file_k1 stripe_61_file_m2 stripe_186_file_k8 stripe_71_file_k6 stripe_54_file_k8 stripe_269_file_k3 stripe_21_file_m4 stripe_58_file_m2 stripe_238_file_k4 stripe_131_file_m3 stripe_16_file_m2 stripe_204_file_k7 stripe_77_file_k10 stripe_32_file_k2 stripe_97_file_k10 stripe_70_file_k4 stripe_36_file_k4 stripe_155_file_k1 stripe_142_file_m2 stripe_220_file_k8 stripe_130_file_k5 stripe_196_file_k5 stripe_203_file_k4 stripe_215_file_m4 stripe_89_file_k10 stripe_182_file_m4 stripe_157_file_k2 stripe_135_file_k2 stripe_95_file_k6 stripe_241_file_k3 stripe_233_file_k2 stripe_237_file_k10 stripe_221_file_k10 stripe_62_file_k4 stripe_244_file_m3 stripe_118_file_m2 stripe_106_file_k5 stripe_251_file_m2 stripe_272_file_k2 stripe_128_file_k4 stripe_210_file_m1 stripe_51_file_k7 stripe_86_file_k6 stripe_8_file_k6 stripe_2_file_k8 stripe_255_file_k7 stripe_63_file_m2 stripe_213_file_k1 stripe_112_file_m1 stripe_40_file_k7 stripe_3_file_k1 stripe_100_file_m1 stripe_167_file_m1 stripe_211_file_k4 stripe_202_file_k3 stripe_199_file_k5 stripe_46_file_k3 stripe_174_file_m3 stripe_239_file_k7 stripe_262_file_m4 stripe_80_file_k3 stripe_125_file_k7 stripe_159_file_m3 stripe_200_file_k8 stripe_234_file_k3 stripe_137_file_m3 stripe_39_file_k9 stripe_67_file_k5 stripe_101_file_k4 stripe_94_file_m2 stripe_166_file_m1 stripe_79_file_k4 stripe_19_file_k2 stripe_44_file_k7 stripe_152_file_m4 stripe_205_file_k3 stripe_263_file_m3 stripe_85_file_m3 stripe_189_file_m3 stripe_116_file_k6 stripe_240_file_k10 stripe_120_file_k8 stripe_209_file_k6 stripe_37_file_k4 stripe_141_file_m3 stripe_124_file_m1 stripe_22_file_m1 stripe_42_file_m1 stripe_9_file_k2 stripe_242_file_k1 stripe_144_file_k6 stripe_56_file_k1 stripe_249_file_k6 stripe_74_file_k6 stripe_168_file_m4 stripe_207_file_k7 stripe_81_file_k6 stripe_134_file_m1 stripe_227_file_m3 stripe_197_file_k5 stripe_43_file_k8 stripe_7_file_k2 stripe_4_file_k2 stripe_45_file_k6 stripe_259_file_k10 stripe_121_file_k3 stripe_90_file_k2 stripe_25_file_m2 stripe_195_file_m2 stripe_41_file_k5 stripe_55_file_m4 stripe_183_file_m4 stripe_35_file_k4 stripe_0_file_k1 stripe_230_file_k7 stripe_260_file_k2 stripe_69_file_k9 stripe_148_file_k6 stripe_236_file_k7 stripe_162_file_k8 stripe_224_file_k2 stripe_126_file_k2 stripe_136_file_k9 stripe_87_file_k4 stripe_273_file_k1 stripe_123_file_m3 stripe_138_file_k10 stripe_271_file_m2 stripe_18_file_k1 
+request recv'd: ip: 3439337388
+ips[i] 202
+ips[i] 203
+ips[i] 204
+ips[i] 205
+ips[i] 206
+ips[i] 207
+ips[i] 208
+ips[i] 209
+ips[i] 210
+ips[i] 211
+ips[i] 212
+ips[i] 213
+ips[i] 214
+ips[i] 215
+ips[i] 216
+ips[i] 217
+ips[i] 218
+ips[i] 219
+ips[i] 220
+0slave_up_bd 123
+0slave_dw_bd 109
+1slave_up_bd 123
+1slave_dw_bd 110
+2slave_up_bd 123
+2slave_dw_bd 109
+3slave_up_bd 105
+3slave_dw_bd 110
+4slave_up_bd 123
+4slave_dw_bd 108
+5slave_up_bd 121
+5slave_dw_bd 110
+6slave_up_bd 125
+6slave_dw_bd 125
+7slave_up_bd 123
+7slave_dw_bd 110
+8slave_up_bd 56
+8slave_dw_bd 102
+9slave_up_bd 46
+9slave_dw_bd 100
+10slave_up_bd 45
+10slave_dw_bd 100
+11slave_up_bd 123
+11slave_dw_bd 110
+12slave_up_bd 122
+12slave_dw_bd 109
+13slave_up_bd 123
+13slave_dw_bd 109
+14slave_up_bd 123
+14slave_dw_bd 108
+15slave_up_bd 122
+15slave_dw_bd 110
+16slave_up_bd 123
+16slave_dw_bd 108
+17slave_up_bd 123
+17slave_dw_bd 107
+18slave_up_bd 123
+18slave_dw_bd 107
+getSlaveBDs finish !
+degree of stripe 0 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 1 0
+
+degree of stripe 1 : in, out
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 2 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 3 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 4 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 3 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 5 : in, out
+ 1 1
+ 4 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 6 : in, out
+ 1 1
+ 1 1
+ 2 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 7 : in, out
+ 5 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 8 : in, out
+ 1 1
+ 5 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 9 : in, out
+ 1 1
+ 1 1
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 10 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 11 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 12 : in, out
+ 2 1
+ 2 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 13 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 14 : in, out
+ 2 1
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 15 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 16 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 17 : in, out
+ 2 1
+ 4 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 18 : in, out
+ 2 1
+ 2 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 19 : in, out
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 20 : in, out
+ 6 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 21 : in, out
+ 2 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 22 : in, out
+ 7 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 23 : in, out
+ 4 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 24 : in, out
+ 4 1
+ 1 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 25 : in, out
+ 1 1
+ 1 1
+ 4 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 26 : in, out
+ 1 1
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 27 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 28 : in, out
+ 5 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 29 : in, out
+ 3 1
+ 1 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 30 : in, out
+ 4 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 31 : in, out
+ 5 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 32 : in, out
+ 4 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 33 : in, out
+ 6 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 34 : in, out
+ 1 1
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 35 : in, out
+ 5 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 37 : in, out
+ 4 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 5 0
+
+degree of stripe 43 : in, out
+ 1 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 5 0
+
+degree of stripe 50 : in, out
+ 5 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 100 : in, out
+ 1 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 5 0
+
+degree of stripe 107 : in, out
+ 1 1
+ 6 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 139 : in, out
+ 1 1
+ 7 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 153 : in, out
+ 5 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 187 : in, out
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 199 : in, out
+ 1 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 200 : in, out
+ 5 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+remain cnt = 161
+node 0, up_time = 15.610, dw_time = 13.505 
+node 1, up_time = 14.049, dw_time = 16.291 
+node 2, up_time = 9.886, dw_time = 14.679 
+node 3, up_time = 0.000, dw_time = 0.000 
+node 4, up_time = 13.528, dw_time = 14.815 
+node 5, up_time = 16.926, dw_time = 14.545 
+node 6, up_time = 14.336, dw_time = 15.872 
+node 7, up_time = 15.610, dw_time = 16.291 
+node 8, up_time = 19.429, dw_time = 14.431 
+node 9, up_time = 19.478, dw_time = 14.720 
+node 10, up_time = 19.911, dw_time = 14.720 
+node 11, up_time = 14.569, dw_time = 14.545 
+node 12, up_time = 14.689, dw_time = 14.092 
+node 13, up_time = 15.089, dw_time = 16.440 
+node 14, up_time = 13.528, dw_time = 15.407 
+node 15, up_time = 14.689, dw_time = 14.545 
+node 16, up_time = 13.008, dw_time = 16.593 
+node 17, up_time = 15.089, dw_time = 14.355 
+node 18, up_time = 15.610, dw_time = 15.551 
+node 0, sum_dw = 23, sum_up = 30,  bd_dw = 109, bd_up = 123 
+node 1, sum_dw = 28, sum_up = 27,  bd_dw = 110, bd_up = 123 
+node 2, sum_dw = 25, sum_up = 19,  bd_dw = 109, bd_up = 123 
+node 3, sum_dw = 0, sum_up = 0,  bd_dw = 110, bd_up = 105 
+node 4, sum_dw = 25, sum_up = 26,  bd_dw = 108, bd_up = 123 
+node 5, sum_dw = 25, sum_up = 32,  bd_dw = 110, bd_up = 121 
+node 6, sum_dw = 31, sum_up = 28,  bd_dw = 125, bd_up = 125 
+node 7, sum_dw = 28, sum_up = 30,  bd_dw = 110, bd_up = 123 
+node 8, sum_dw = 23, sum_up = 17,  bd_dw = 102, bd_up = 56 
+node 9, sum_dw = 23, sum_up = 14,  bd_dw = 100, bd_up = 46 
+node 10, sum_dw = 23, sum_up = 14,  bd_dw = 100, bd_up = 45 
+node 11, sum_dw = 25, sum_up = 28,  bd_dw = 110, bd_up = 123 
+node 12, sum_dw = 24, sum_up = 28,  bd_dw = 109, bd_up = 122 
+node 13, sum_dw = 28, sum_up = 29,  bd_dw = 109, bd_up = 123 
+node 14, sum_dw = 26, sum_up = 26,  bd_dw = 108, bd_up = 123 
+node 15, sum_dw = 25, sum_up = 28,  bd_dw = 110, bd_up = 122 
+node 16, sum_dw = 28, sum_up = 25,  bd_dw = 108, bd_up = 123 
+node 17, sum_dw = 24, sum_up = 29,  bd_dw = 107, bd_up = 123 
+node 18, sum_dw = 26, sum_up = 30,  bd_dw = 107, bd_up = 123 
+all: indeg = 460 , outdeg = 460
+finish buildGraph!!!!!!!!!!
+finish initConf
+finish getEdgesWithoutDep
+460 finish the doScheduling
+lostBlk: stripe_49_file_k2
+stripe_49_file_k6 stripe_49_file_k9 stripe_49_file_k4 stripe_49_file_k3 stripe_49_file_k8 stripe_49_file_k1 stripe_49_file_k5 stripe_49_file_m2 stripe_49_file_m4 stripe_49_file_k7  
+lostBlk: stripe_17_file_k1
+stripe_17_file_k8 stripe_17_file_k10 stripe_17_file_k9 stripe_17_file_k7 stripe_17_file_m1 stripe_17_file_m2 stripe_17_file_m4 stripe_17_file_k3 stripe_17_file_k5 stripe_17_file_k4  
+lostBlk: stripe_188_file_k7
+stripe_188_file_k10 stripe_188_file_k8 stripe_188_file_k9 stripe_188_file_k5 stripe_188_file_k2 stripe_188_file_k6 stripe_188_file_m3 stripe_188_file_m4 stripe_188_file_m1 stripe_188_file_k3  
+lostBlk: stripe_119_file_k7
+stripe_119_file_k10 stripe_119_file_k3 stripe_119_file_k2 stripe_119_file_m3 stripe_119_file_m4 stripe_119_file_k1 stripe_119_file_k6 stripe_119_file_k8 stripe_119_file_k4 stripe_119_file_m1  
+lostBlk: stripe_225_file_k4
+stripe_225_file_k10 stripe_225_file_k7 stripe_225_file_k8 stripe_225_file_k9 stripe_225_file_k1 stripe_225_file_k5 stripe_225_file_k2 stripe_225_file_m1 stripe_225_file_k6 stripe_225_file_k3  
+lostBlk: stripe_140_file_k5
+stripe_140_file_k6 stripe_140_file_k8 stripe_140_file_k3 stripe_140_file_k9 stripe_140_file_k1 stripe_140_file_m1 stripe_140_file_k2 stripe_140_file_k4 stripe_140_file_k7 stripe_140_file_k10  
+lostBlk: stripe_30_file_m1
+stripe_30_file_k5 stripe_30_file_k10 stripe_30_file_k1 stripe_30_file_k8 stripe_30_file_k3 stripe_30_file_m2 stripe_30_file_k4 stripe_30_file_k9 stripe_30_file_k7 stripe_30_file_k6  
+lostBlk: stripe_29_file_k10
+stripe_29_file_m1 stripe_29_file_k5 stripe_29_file_m4 stripe_29_file_k8 stripe_29_file_k7 stripe_29_file_k9 stripe_29_file_k6 stripe_29_file_k2 stripe_29_file_k4 stripe_29_file_k1  
+lostBlk: stripe_110_file_k5
+stripe_110_file_k8 stripe_110_file_k1 stripe_110_file_k4 stripe_110_file_m2 stripe_110_file_k7 stripe_110_file_k6 stripe_110_file_k3 stripe_110_file_m1 stripe_110_file_k2 stripe_110_file_k9  
+lostBlk: stripe_253_file_k10
+stripe_253_file_k3 stripe_253_file_k7 stripe_253_file_k8 stripe_253_file_m2 stripe_253_file_k5 stripe_253_file_k9 stripe_253_file_k1 stripe_253_file_k4 stripe_253_file_m1 stripe_253_file_k2  
+lostBlk: stripe_78_file_m1
+stripe_78_file_k5 stripe_78_file_k4 stripe_78_file_k10 stripe_78_file_k6 stripe_78_file_k8 stripe_78_file_k1 stripe_78_file_k9 stripe_78_file_k2 stripe_78_file_k7 stripe_78_file_k3  
+lostBlk: stripe_145_file_k3
+stripe_145_file_k9 stripe_145_file_k5 stripe_145_file_m2 stripe_145_file_m3 stripe_145_file_k2 stripe_145_file_m1 stripe_145_file_k7 stripe_145_file_k6 stripe_145_file_k10 stripe_145_file_k1  
+lostBlk: stripe_14_file_k1
+stripe_14_file_k3 stripe_14_file_k6 stripe_14_file_m2 stripe_14_file_m4 stripe_14_file_k9 stripe_14_file_k2 stripe_14_file_k4 stripe_14_file_k10 stripe_14_file_k8 stripe_14_file_k7  
+lostBlk: stripe_151_file_m3
+stripe_151_file_k2 stripe_151_file_k7 stripe_151_file_k1 stripe_151_file_m2 stripe_151_file_m4 stripe_151_file_k10 stripe_151_file_k5 stripe_151_file_k3 stripe_151_file_k6 stripe_151_file_k4  
+lostBlk: stripe_170_file_m2
+stripe_170_file_k4 stripe_170_file_k2 stripe_170_file_m3 stripe_170_file_k7 stripe_170_file_k5 stripe_170_file_k8 stripe_170_file_k10 stripe_170_file_k3 stripe_170_file_k6 stripe_170_file_k9  
+lostBlk: stripe_92_file_k9
+stripe_92_file_k1 stripe_92_file_k5 stripe_92_file_k8 stripe_92_file_k4 stripe_92_file_m3 stripe_92_file_k6 stripe_92_file_k7 stripe_92_file_k2 stripe_92_file_k3 stripe_92_file_k10  
+lostBlk: stripe_68_file_m3
+stripe_68_file_k9 stripe_68_file_m1 stripe_68_file_m2 stripe_68_file_m4 stripe_68_file_k7 stripe_68_file_k8 stripe_68_file_k4 stripe_68_file_k10 stripe_68_file_k2 stripe_68_file_k5  
+lostBlk: stripe_175_file_k1
+stripe_175_file_k2 stripe_175_file_k4 stripe_175_file_m4 stripe_175_file_k3 stripe_175_file_k7 stripe_175_file_k5 stripe_175_file_k9 stripe_175_file_k10 stripe_175_file_k6 stripe_175_file_m1  
+lostBlk: stripe_257_file_k5
+stripe_257_file_k9 stripe_257_file_k6 stripe_257_file_k2 stripe_257_file_k10 stripe_257_file_k4 stripe_257_file_k8 stripe_257_file_k1 stripe_257_file_k7 stripe_257_file_k3 stripe_257_file_m1  
+lostBlk: stripe_191_file_k2
+stripe_191_file_k3 stripe_191_file_k9 stripe_191_file_k8 stripe_191_file_k10 stripe_191_file_k6 stripe_191_file_k1 stripe_191_file_k4 stripe_191_file_k5 stripe_191_file_k7 stripe_191_file_m1  
+lostBlk: stripe_105_file_m3
+stripe_105_file_k2 stripe_105_file_m2 stripe_105_file_k7 stripe_105_file_k5 stripe_105_file_k4 stripe_105_file_k8 stripe_105_file_k6 stripe_105_file_k1 stripe_105_file_k9 stripe_105_file_k10  
+lostBlk: stripe_206_file_k4
+stripe_206_file_k6 stripe_206_file_m4 stripe_206_file_m1 stripe_206_file_k7 stripe_206_file_k3 stripe_206_file_k5 stripe_206_file_k1 stripe_206_file_k10 stripe_206_file_k9 stripe_206_file_k2  
+lostBlk: stripe_190_file_m3
+stripe_190_file_k5 stripe_190_file_k4 stripe_190_file_k2 stripe_190_file_k6 stripe_190_file_k9 stripe_190_file_k8 stripe_190_file_k10 stripe_190_file_k7 stripe_190_file_k3 stripe_190_file_k1  
+lostBlk: stripe_247_file_k3
+stripe_247_file_k7 stripe_247_file_k8 stripe_247_file_k10 stripe_247_file_k5 stripe_247_file_m1 stripe_247_file_k6 stripe_247_file_k1 stripe_247_file_k2 stripe_247_file_k9 stripe_247_file_k4  
+lostBlk: stripe_104_file_k2
+stripe_104_file_k1 stripe_104_file_m1 stripe_104_file_m3 stripe_104_file_k8 stripe_104_file_k5 stripe_104_file_k4 stripe_104_file_k6 stripe_104_file_k3 stripe_104_file_k9 stripe_104_file_k10  
+lostBlk: stripe_161_file_k7
+stripe_161_file_k1 stripe_161_file_k8 stripe_161_file_k3 stripe_161_file_m3 stripe_161_file_k10 stripe_161_file_k5 stripe_161_file_k9 stripe_161_file_k2 stripe_161_file_m1 stripe_161_file_k6  
+lostBlk: stripe_66_file_k5
+stripe_66_file_k10 stripe_66_file_k6 stripe_66_file_k1 stripe_66_file_k9 stripe_66_file_k8 stripe_66_file_k3 stripe_66_file_k7 stripe_66_file_m1 stripe_66_file_k4 stripe_66_file_k2  
+lostBlk: stripe_72_file_k6
+stripe_72_file_k3 stripe_72_file_k10 stripe_72_file_m2 stripe_72_file_m4 stripe_72_file_k9 stripe_72_file_m1 stripe_72_file_k4 stripe_72_file_k7 stripe_72_file_k1 stripe_72_file_k8  
+lostBlk: stripe_28_file_m4
+stripe_28_file_k7 stripe_28_file_m3 stripe_28_file_k8 stripe_28_file_k1 stripe_28_file_k5 stripe_28_file_k6 stripe_28_file_k4 stripe_28_file_k10 stripe_28_file_k3 stripe_28_file_k9  
+lostBlk: stripe_184_file_k7
+stripe_184_file_k4 stripe_184_file_k10 stripe_184_file_m4 stripe_184_file_k5 stripe_184_file_k2 stripe_184_file_m1 stripe_184_file_k1 stripe_184_file_k6 stripe_184_file_k9 stripe_184_file_k3  
+lostBlk: stripe_156_file_k5
+stripe_156_file_k2 stripe_156_file_k6 stripe_156_file_k4 stripe_156_file_k10 stripe_156_file_m1 stripe_156_file_k7 stripe_156_file_k1 stripe_156_file_k8 stripe_156_file_k9 stripe_156_file_k3  
+lostBlk: stripe_201_file_k2
+stripe_201_file_k8 stripe_201_file_m3 stripe_201_file_k6 stripe_201_file_m1 stripe_201_file_k3 stripe_201_file_k4 stripe_201_file_k10 stripe_201_file_k1 stripe_201_file_k5 stripe_201_file_k7  
+lostBlk: stripe_250_file_k3
+stripe_250_file_k1 stripe_250_file_m1 stripe_250_file_k9 stripe_250_file_k7 stripe_250_file_k10 stripe_250_file_k2 stripe_250_file_k5 stripe_250_file_k4 stripe_250_file_k6 stripe_250_file_k8  
+lostBlk: stripe_117_file_k2
+stripe_117_file_m1 stripe_117_file_k7 stripe_117_file_k4 stripe_117_file_k1 stripe_117_file_k8 stripe_117_file_k10 stripe_117_file_k9 stripe_117_file_k3 stripe_117_file_k6 stripe_117_file_k5  
+lostBlk: stripe_10_file_m2
+stripe_10_file_k1 stripe_10_file_k3 stripe_10_file_m1 stripe_10_file_k10 stripe_10_file_k6 stripe_10_file_k7 stripe_10_file_k2 stripe_10_file_k9 stripe_10_file_k8 stripe_10_file_k4  
+lostBlk: stripe_111_file_m1
+stripe_111_file_k2 stripe_111_file_m4 stripe_111_file_k3 stripe_111_file_k6 stripe_111_file_k4 stripe_111_file_k10 stripe_111_file_k7 stripe_111_file_k1 stripe_111_file_k9 stripe_111_file_k8  
+lostBlk: stripe_246_file_m3
+stripe_246_file_k4 stripe_246_file_k7 stripe_246_file_k5 stripe_246_file_k3 stripe_246_file_k2 stripe_246_file_k9 stripe_246_file_k8 stripe_246_file_k6 stripe_246_file_k1 stripe_246_file_k10  
+lostBlk: stripe_23_file_k10
+stripe_23_file_k1 stripe_23_file_k9 stripe_23_file_k8 stripe_23_file_k2 stripe_23_file_m1 stripe_23_file_k7 stripe_23_file_k6 stripe_23_file_k5 stripe_23_file_k3 stripe_23_file_k4  
+lostBlk: stripe_93_file_k10
+stripe_93_file_k4 stripe_93_file_k3 stripe_93_file_k7 stripe_93_file_k1 stripe_93_file_k6 stripe_93_file_k2 stripe_93_file_k5 stripe_93_file_k8 stripe_93_file_k9 stripe_93_file_m1  
+lostBlk: stripe_203_file_k4
+stripe_203_file_m1 stripe_203_file_k7 stripe_203_file_k5 stripe_203_file_k1 stripe_203_file_k2 stripe_203_file_k6 stripe_203_file_k10 stripe_203_file_k8 stripe_203_file_k9 stripe_203_file_k3  
+lostBlk: stripe_241_file_k3
+stripe_241_file_k5 stripe_241_file_k4 stripe_241_file_k7 stripe_241_file_k1 stripe_241_file_m1 stripe_241_file_k2 stripe_241_file_k8 stripe_241_file_k6 stripe_241_file_k9 stripe_241_file_k10  
+lostBlk: stripe_125_file_k7
+stripe_125_file_k6 stripe_125_file_k8 stripe_125_file_k10 stripe_125_file_k9 stripe_125_file_k2 stripe_125_file_k4 stripe_125_file_k3 stripe_125_file_m1 stripe_125_file_k5 stripe_125_file_k1  
+lostBlk: stripe_205_file_k3
+stripe_205_file_k9 stripe_205_file_k10 stripe_205_file_k7 stripe_205_file_k2 stripe_205_file_k4 stripe_205_file_k6 stripe_205_file_k1 stripe_205_file_k5 stripe_205_file_k8 stripe_205_file_m1  
+lostBlk: stripe_41_file_k5
+stripe_41_file_k7 stripe_41_file_m3 stripe_41_file_k6 stripe_41_file_k4 stripe_41_file_k3 stripe_41_file_k1 stripe_41_file_m1 stripe_41_file_k9 stripe_41_file_k8 stripe_41_file_k2  
+lostBlk: stripe_126_file_k2
+stripe_126_file_k3 stripe_126_file_k10 stripe_126_file_k7 stripe_126_file_k1 stripe_126_file_k6 stripe_126_file_k5 stripe_126_file_k9 stripe_126_file_k4 stripe_126_file_k8 stripe_126_file_m1  
+lostBlk: stripe_136_file_k9
+stripe_136_file_k7 stripe_136_file_m2 stripe_136_file_k5 stripe_136_file_k1 stripe_136_file_k10 stripe_136_file_k2 stripe_136_file_k3 stripe_136_file_m1 stripe_136_file_k8 stripe_136_file_k6  
+ !!!!!! sort cmds for each slave by repairTime 
+schedule  batch 1
+0slave_up_bd 123
+0slave_dw_bd 109
+1slave_up_bd 123
+1slave_dw_bd 110
+2slave_up_bd 123
+2slave_dw_bd 109
+3slave_up_bd 105
+3slave_dw_bd 110
+4slave_up_bd 123
+4slave_dw_bd 108
+5slave_up_bd 121
+5slave_dw_bd 110
+6slave_up_bd 125
+6slave_dw_bd 125
+7slave_up_bd 123
+7slave_dw_bd 110
+8slave_up_bd 56
+8slave_dw_bd 102
+9slave_up_bd 46
+9slave_dw_bd 100
+10slave_up_bd 45
+10slave_dw_bd 100
+11slave_up_bd 123
+11slave_dw_bd 110
+12slave_up_bd 122
+12slave_dw_bd 109
+13slave_up_bd 123
+13slave_dw_bd 109
+14slave_up_bd 123
+14slave_dw_bd 108
+15slave_up_bd 122
+15slave_dw_bd 110
+16slave_up_bd 123
+16slave_dw_bd 108
+17slave_up_bd 123
+17slave_dw_bd 107
+18slave_up_bd 123
+18slave_dw_bd 107
+getSlaveBDs finish !
+degree of stripe 36 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 1 0
+
+degree of stripe 38 : in, out
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 39 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 40 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 41 : in, out
+ 1 1
+ 3 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 42 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 44 : in, out
+ 4 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 45 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 46 : in, out
+ 5 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 47 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 48 : in, out
+ 1 1
+ 5 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 49 : in, out
+ 1 1
+ 3 1
+ 1 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 51 : in, out
+ 2 1
+ 2 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 52 : in, out
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 53 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 54 : in, out
+ 3 1
+ 1 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 55 : in, out
+ 6 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 56 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 57 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 58 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 59 : in, out
+ 2 1
+ 1 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 60 : in, out
+ 2 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 61 : in, out
+ 2 1
+ 1 1
+ 4 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 62 : in, out
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 63 : in, out
+ 2 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 64 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 65 : in, out
+ 2 1
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 66 : in, out
+ 2 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 67 : in, out
+ 3 1
+ 3 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 68 : in, out
+ 1 1
+ 2 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 69 : in, out
+ 2 1
+ 4 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 71 : in, out
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 76 : in, out
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 86 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+remain cnt = 127
+node 0, up_time = 11.967, dw_time = 9.982 
+node 1, up_time = 8.325, dw_time = 10.473 
+node 2, up_time = 10.927, dw_time = 14.679 
+node 3, up_time = 0.000, dw_time = 0.000 
+node 4, up_time = 9.366, dw_time = 10.667 
+node 5, up_time = 10.579, dw_time = 10.473 
+node 6, up_time = 9.216, dw_time = 10.752 
+node 7, up_time = 11.967, dw_time = 11.636 
+node 8, up_time = 19.429, dw_time = 10.667 
+node 9, up_time = 19.478, dw_time = 10.880 
+node 10, up_time = 19.911, dw_time = 12.800 
+node 11, up_time = 9.366, dw_time = 11.636 
+node 12, up_time = 11.541, dw_time = 9.982 
+node 13, up_time = 10.927, dw_time = 11.743 
+node 14, up_time = 11.447, dw_time = 10.667 
+node 15, up_time = 8.393, dw_time = 10.473 
+node 16, up_time = 10.407, dw_time = 10.074 
+node 17, up_time = 9.886, dw_time = 11.963 
+node 18, up_time = 9.366, dw_time = 11.364 
+node 0, sum_dw = 17, sum_up = 23,  bd_dw = 109, bd_up = 123 
+node 1, sum_dw = 18, sum_up = 16,  bd_dw = 110, bd_up = 123 
+node 2, sum_dw = 25, sum_up = 21,  bd_dw = 109, bd_up = 123 
+node 3, sum_dw = 0, sum_up = 0,  bd_dw = 110, bd_up = 105 
+node 4, sum_dw = 18, sum_up = 18,  bd_dw = 108, bd_up = 123 
+node 5, sum_dw = 18, sum_up = 20,  bd_dw = 110, bd_up = 121 
+node 6, sum_dw = 21, sum_up = 18,  bd_dw = 125, bd_up = 125 
+node 7, sum_dw = 20, sum_up = 23,  bd_dw = 110, bd_up = 123 
+node 8, sum_dw = 17, sum_up = 17,  bd_dw = 102, bd_up = 56 
+node 9, sum_dw = 17, sum_up = 14,  bd_dw = 100, bd_up = 46 
+node 10, sum_dw = 20, sum_up = 14,  bd_dw = 100, bd_up = 45 
+node 11, sum_dw = 20, sum_up = 18,  bd_dw = 110, bd_up = 123 
+node 12, sum_dw = 17, sum_up = 22,  bd_dw = 109, bd_up = 122 
+node 13, sum_dw = 20, sum_up = 21,  bd_dw = 109, bd_up = 123 
+node 14, sum_dw = 18, sum_up = 22,  bd_dw = 108, bd_up = 123 
+node 15, sum_dw = 18, sum_up = 16,  bd_dw = 110, bd_up = 122 
+node 16, sum_dw = 17, sum_up = 20,  bd_dw = 108, bd_up = 123 
+node 17, sum_dw = 20, sum_up = 19,  bd_dw = 107, bd_up = 123 
+node 18, sum_dw = 19, sum_up = 18,  bd_dw = 107, bd_up = 123 
+all: indeg = 340 , outdeg = 340
+finish buildGraph!!!!!!!!!!
+finish initConf
+finish getEdgesWithoutDep
+340 finish the doScheduling
+lostBlk: stripe_198_file_k4
+stripe_198_file_k8 stripe_198_file_k5 stripe_198_file_k1 stripe_198_file_k6 stripe_198_file_k3 stripe_198_file_k10 stripe_198_file_k9 stripe_198_file_m2 stripe_198_file_m4 stripe_198_file_k2  
+lostBlk: stripe_219_file_k7
+stripe_219_file_k6 stripe_219_file_k2 stripe_219_file_k9 stripe_219_file_k4 stripe_219_file_k3 stripe_219_file_m1 stripe_219_file_m2 stripe_219_file_k10 stripe_219_file_k1 stripe_219_file_k8  
+lostBlk: stripe_132_file_k10
+stripe_132_file_k1 stripe_132_file_k5 stripe_132_file_k8 stripe_132_file_k6 stripe_132_file_k4 stripe_132_file_k3 stripe_132_file_k2 stripe_132_file_m3 stripe_132_file_k9 stripe_132_file_k7  
+lostBlk: stripe_76_file_k7
+stripe_76_file_k10 stripe_76_file_k8 stripe_76_file_k1 stripe_76_file_k2 stripe_76_file_m2 stripe_76_file_m3 stripe_76_file_m4 stripe_76_file_m1 stripe_76_file_k3 stripe_76_file_k9  
+lostBlk: stripe_82_file_m3
+stripe_82_file_k9 stripe_82_file_k10 stripe_82_file_k5 stripe_82_file_k2 stripe_82_file_k4 stripe_82_file_m1 stripe_82_file_m4 stripe_82_file_k8 stripe_82_file_k6 stripe_82_file_k1  
+lostBlk: stripe_98_file_m1
+stripe_98_file_k1 stripe_98_file_k3 stripe_98_file_k10 stripe_98_file_k5 stripe_98_file_k6 stripe_98_file_k7 stripe_98_file_k4 stripe_98_file_k9 stripe_98_file_k2 stripe_98_file_k8  
+lostBlk: stripe_73_file_k8
+stripe_73_file_k6 stripe_73_file_k5 stripe_73_file_k7 stripe_73_file_k1 stripe_73_file_k3 stripe_73_file_m4 stripe_73_file_k10 stripe_73_file_m1 stripe_73_file_k4 stripe_73_file_k9  
+lostBlk: stripe_65_file_m3
+stripe_65_file_k6 stripe_65_file_k3 stripe_65_file_k4 stripe_65_file_k7 stripe_65_file_k1 stripe_65_file_m1 stripe_65_file_k5 stripe_65_file_k8 stripe_65_file_k9 stripe_65_file_k10  
+lostBlk: stripe_24_file_m4
+stripe_24_file_k10 stripe_24_file_k2 stripe_24_file_m2 stripe_24_file_k9 stripe_24_file_k3 stripe_24_file_k5 stripe_24_file_k6 stripe_24_file_k1 stripe_24_file_k7 stripe_24_file_k4  
+lostBlk: stripe_264_file_k3
+stripe_264_file_k4 stripe_264_file_m1 stripe_264_file_k1 stripe_264_file_k2 stripe_264_file_m2 stripe_264_file_k10 stripe_264_file_k5 stripe_264_file_k6 stripe_264_file_k9 stripe_264_file_k8  
+lostBlk: stripe_172_file_m3
+stripe_172_file_k6 stripe_172_file_k1 stripe_172_file_k7 stripe_172_file_m4 stripe_172_file_k8 stripe_172_file_k4 stripe_172_file_k2 stripe_172_file_k9 stripe_172_file_k10 stripe_172_file_k5  
+lostBlk: stripe_171_file_m1
+stripe_171_file_k9 stripe_171_file_k6 stripe_171_file_k5 stripe_171_file_m2 stripe_171_file_k3 stripe_171_file_k4 stripe_171_file_k7 stripe_171_file_k10 stripe_171_file_k2 stripe_171_file_k1  
+lostBlk: stripe_108_file_k5
+stripe_108_file_k1 stripe_108_file_k8 stripe_108_file_m3 stripe_108_file_m4 stripe_108_file_k7 stripe_108_file_k10 stripe_108_file_m1 stripe_108_file_k2 stripe_108_file_k3 stripe_108_file_k4  
+lostBlk: stripe_113_file_m4
+stripe_113_file_k7 stripe_113_file_k4 stripe_113_file_k6 stripe_113_file_m1 stripe_113_file_m2 stripe_113_file_k3 stripe_113_file_k1 stripe_113_file_k5 stripe_113_file_k2 stripe_113_file_k8  
+lostBlk: stripe_99_file_k8
+stripe_99_file_k9 stripe_99_file_m1 stripe_99_file_k10 stripe_99_file_k5 stripe_99_file_k4 stripe_99_file_k1 stripe_99_file_k6 stripe_99_file_k7 stripe_99_file_k2 stripe_99_file_k3  
+lostBlk: stripe_214_file_m3
+stripe_214_file_k4 stripe_214_file_k1 stripe_214_file_k3 stripe_214_file_m4 stripe_214_file_k10 stripe_214_file_k2 stripe_214_file_k7 stripe_214_file_k9 stripe_214_file_k5 stripe_214_file_k6  
+lostBlk: stripe_59_file_k9
+stripe_59_file_k5 stripe_59_file_m2 stripe_59_file_k7 stripe_59_file_k10 stripe_59_file_m1 stripe_59_file_k2 stripe_59_file_k1 stripe_59_file_k3 stripe_59_file_k4 stripe_59_file_k6  
+lostBlk: stripe_268_file_k5
+stripe_268_file_k1 stripe_268_file_k3 stripe_268_file_k6 stripe_268_file_k10 stripe_268_file_k9 stripe_268_file_k8 stripe_268_file_m1 stripe_268_file_k7 stripe_268_file_k2 stripe_268_file_k4  
+lostBlk: stripe_5_file_k2
+stripe_5_file_m1 stripe_5_file_k6 stripe_5_file_k4 stripe_5_file_k7 stripe_5_file_k3 stripe_5_file_k5 stripe_5_file_k1 stripe_5_file_k9 stripe_5_file_k10 stripe_5_file_k8  
+lostBlk: stripe_160_file_k9
+stripe_160_file_k7 stripe_160_file_m1 stripe_160_file_k4 stripe_160_file_k10 stripe_160_file_m2 stripe_160_file_m3 stripe_160_file_k6 stripe_160_file_k1 stripe_160_file_k5 stripe_160_file_k2  
+lostBlk: stripe_178_file_k3
+stripe_178_file_k4 stripe_178_file_m2 stripe_178_file_m4 stripe_178_file_m1 stripe_178_file_k8 stripe_178_file_k2 stripe_178_file_k5 stripe_178_file_k1 stripe_178_file_k6 stripe_178_file_k10  
+lostBlk: stripe_187_file_k2
+stripe_187_file_k10 stripe_187_file_k6 stripe_187_file_k4 stripe_187_file_k8 stripe_187_file_k3 stripe_187_file_k7 stripe_187_file_k9 stripe_187_file_k1 stripe_187_file_k5 stripe_187_file_m1  
+lostBlk: stripe_176_file_k5
+stripe_176_file_k9 stripe_176_file_m1 stripe_176_file_m2 stripe_176_file_m4 stripe_176_file_k6 stripe_176_file_k10 stripe_176_file_k8 stripe_176_file_k2 stripe_176_file_k7 stripe_176_file_k3  
+lostBlk: stripe_165_file_k1
+stripe_165_file_k4 stripe_165_file_m1 stripe_165_file_k10 stripe_165_file_k8 stripe_165_file_k3 stripe_165_file_k9 stripe_165_file_k2 stripe_165_file_k6 stripe_165_file_k5 stripe_165_file_k7  
+lostBlk: stripe_265_file_k2
+stripe_265_file_k5 stripe_265_file_k9 stripe_265_file_m3 stripe_265_file_k7 stripe_265_file_m1 stripe_265_file_k10 stripe_265_file_k6 stripe_265_file_k1 stripe_265_file_k8 stripe_265_file_k3  
+lostBlk: stripe_274_file_k7
+stripe_274_file_k4 stripe_274_file_m1 stripe_274_file_k5 stripe_274_file_m4 stripe_274_file_k8 stripe_274_file_k1 stripe_274_file_k3 stripe_274_file_k2 stripe_274_file_k9 stripe_274_file_k10  
+lostBlk: stripe_50_file_k6
+stripe_50_file_k3 stripe_50_file_m1 stripe_50_file_k2 stripe_50_file_k4 stripe_50_file_k7 stripe_50_file_k9 stripe_50_file_k10 stripe_50_file_k8 stripe_50_file_k1 stripe_50_file_k5  
+lostBlk: stripe_103_file_m2
+stripe_103_file_k6 stripe_103_file_k3 stripe_103_file_k8 stripe_103_file_k1 stripe_103_file_k4 stripe_103_file_k10 stripe_103_file_k9 stripe_103_file_k2 stripe_103_file_k5 stripe_103_file_k7  
+lostBlk: stripe_122_file_m3
+stripe_122_file_k4 stripe_122_file_k1 stripe_122_file_k9 stripe_122_file_k8 stripe_122_file_k6 stripe_122_file_k5 stripe_122_file_k10 stripe_122_file_k3 stripe_122_file_k2 stripe_122_file_k7  
+lostBlk: stripe_91_file_k6
+stripe_91_file_k10 stripe_91_file_k8 stripe_91_file_m2 stripe_91_file_k9 stripe_91_file_k4 stripe_91_file_k7 stripe_91_file_k2 stripe_91_file_m1 stripe_91_file_k1 stripe_91_file_k5  
+lostBlk: stripe_34_file_k5
+stripe_34_file_m1 stripe_34_file_k3 stripe_34_file_k8 stripe_34_file_k4 stripe_34_file_k2 stripe_34_file_k10 stripe_34_file_k9 stripe_34_file_k6 stripe_34_file_k1 stripe_34_file_k7  
+lostBlk: stripe_102_file_k5
+stripe_102_file_k6 stripe_102_file_m1 stripe_102_file_k10 stripe_102_file_k1 stripe_102_file_k2 stripe_102_file_k4 stripe_102_file_k7 stripe_102_file_k8 stripe_102_file_k3 stripe_102_file_k9  
+lostBlk: stripe_266_file_k7
+stripe_266_file_k5 stripe_266_file_k9 stripe_266_file_k3 stripe_266_file_k8 stripe_266_file_k1 stripe_266_file_k2 stripe_266_file_k6 stripe_266_file_k4 stripe_266_file_k10 stripe_266_file_m1  
+lostBlk: stripe_238_file_k4
+stripe_238_file_k3 stripe_238_file_k2 stripe_238_file_k9 stripe_238_file_k7 stripe_238_file_m1 stripe_238_file_k5 stripe_238_file_k1 stripe_238_file_k10 stripe_238_file_k6 stripe_238_file_k8  
+ !!!!!! sort cmds for each slave by repairTime 
+schedule  batch 2
+0slave_up_bd 123
+0slave_dw_bd 109
+1slave_up_bd 123
+1slave_dw_bd 110
+2slave_up_bd 123
+2slave_dw_bd 110
+3slave_up_bd 106
+3slave_dw_bd 111
+4slave_up_bd 123
+4slave_dw_bd 108
+5slave_up_bd 121
+5slave_dw_bd 111
+6slave_up_bd 125
+6slave_dw_bd 125
+7slave_up_bd 123
+7slave_dw_bd 111
+8slave_up_bd 48
+8slave_dw_bd 100
+9slave_up_bd 47
+9slave_dw_bd 99
+10slave_up_bd 38
+10slave_dw_bd 99
+11slave_up_bd 123
+11slave_dw_bd 111
+12slave_up_bd 122
+12slave_dw_bd 109
+13slave_up_bd 123
+13slave_dw_bd 111
+14slave_up_bd 123
+14slave_dw_bd 109
+15slave_up_bd 122
+15slave_dw_bd 112
+16slave_up_bd 123
+16slave_dw_bd 109
+17slave_up_bd 123
+17slave_dw_bd 110
+18slave_up_bd 123
+18slave_dw_bd 110
+getSlaveBDs finish !
+degree of stripe 70 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 1 0
+
+degree of stripe 72 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 73 : in, out
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 74 : in, out
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 75 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 77 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 78 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 79 : in, out
+ 1 1
+ 1 1
+ 5 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 80 : in, out
+ 2 1
+ 2 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 81 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 82 : in, out
+ 2 1
+ 6 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 83 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 84 : in, out
+ 5 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 85 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 87 : in, out
+ 3 1
+ 1 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 88 : in, out
+ 1 1
+ 3 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 89 : in, out
+ 6 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 90 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 91 : in, out
+ 1 1
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 92 : in, out
+ 3 1
+ 3 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 93 : in, out
+ 1 1
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 94 : in, out
+ 1 1
+ 2 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 95 : in, out
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 96 : in, out
+ 1 1
+ 1 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 97 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 98 : in, out
+ 4 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 99 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 101 : in, out
+ 3 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 102 : in, out
+ 4 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 103 : in, out
+ 4 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 104 : in, out
+ 4 1
+ 1 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 109 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 120 : in, out
+ 4 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 137 : in, out
+ 4 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+remain cnt = 93
+node 0, up_time = 10.407, dw_time = 11.743 
+node 1, up_time = 9.366, dw_time = 9.891 
+node 2, up_time = 10.407, dw_time = 11.636 
+node 3, up_time = 0.000, dw_time = 0.000 
+node 4, up_time = 8.846, dw_time = 11.852 
+node 5, up_time = 10.050, dw_time = 12.108 
+node 6, up_time = 9.216, dw_time = 10.752 
+node 7, up_time = 11.967, dw_time = 11.532 
+node 8, up_time = 20.000, dw_time = 8.960 
+node 9, up_time = 19.064, dw_time = 11.636 
+node 10, up_time = 18.526, dw_time = 9.697 
+node 11, up_time = 10.927, dw_time = 13.838 
+node 12, up_time = 11.016, dw_time = 10.569 
+node 13, up_time = 10.407, dw_time = 10.378 
+node 14, up_time = 10.407, dw_time = 10.569 
+node 15, up_time = 11.541, dw_time = 10.857 
+node 16, up_time = 10.927, dw_time = 10.569 
+node 17, up_time = 10.407, dw_time = 10.473 
+node 18, up_time = 10.407, dw_time = 12.218 
+node 0, sum_dw = 20, sum_up = 20,  bd_dw = 109, bd_up = 123 
+node 1, sum_dw = 17, sum_up = 18,  bd_dw = 110, bd_up = 123 
+node 2, sum_dw = 20, sum_up = 20,  bd_dw = 110, bd_up = 123 
+node 3, sum_dw = 0, sum_up = 0,  bd_dw = 111, bd_up = 106 
+node 4, sum_dw = 20, sum_up = 17,  bd_dw = 108, bd_up = 123 
+node 5, sum_dw = 21, sum_up = 19,  bd_dw = 111, bd_up = 121 
+node 6, sum_dw = 21, sum_up = 18,  bd_dw = 125, bd_up = 125 
+node 7, sum_dw = 20, sum_up = 23,  bd_dw = 111, bd_up = 123 
+node 8, sum_dw = 14, sum_up = 15,  bd_dw = 100, bd_up = 48 
+node 9, sum_dw = 18, sum_up = 14,  bd_dw = 99, bd_up = 47 
+node 10, sum_dw = 15, sum_up = 11,  bd_dw = 99, bd_up = 38 
+node 11, sum_dw = 24, sum_up = 21,  bd_dw = 111, bd_up = 123 
+node 12, sum_dw = 18, sum_up = 21,  bd_dw = 109, bd_up = 122 
+node 13, sum_dw = 18, sum_up = 20,  bd_dw = 111, bd_up = 123 
+node 14, sum_dw = 18, sum_up = 20,  bd_dw = 109, bd_up = 123 
+node 15, sum_dw = 19, sum_up = 22,  bd_dw = 112, bd_up = 122 
+node 16, sum_dw = 18, sum_up = 21,  bd_dw = 109, bd_up = 123 
+node 17, sum_dw = 18, sum_up = 20,  bd_dw = 110, bd_up = 123 
+node 18, sum_dw = 21, sum_up = 20,  bd_dw = 110, bd_up = 123 
+all: indeg = 340 , outdeg = 340
+finish buildGraph!!!!!!!!!!
+finish initConf
+finish getEdgesWithoutDep
+340 finish the doScheduling
+lostBlk: stripe_83_file_k8
+stripe_83_file_k2 stripe_83_file_k3 stripe_83_file_k10 stripe_83_file_k6 stripe_83_file_k7 stripe_83_file_k9 stripe_83_file_k4 stripe_83_file_m3 stripe_83_file_m4 stripe_83_file_m1  
+lostBlk: stripe_229_file_k4
+stripe_229_file_k1 stripe_229_file_k5 stripe_229_file_k8 stripe_229_file_k2 stripe_229_file_k6 stripe_229_file_k10 stripe_229_file_m2 stripe_229_file_m1 stripe_229_file_k3 stripe_229_file_k7  
+lostBlk: stripe_235_file_k10
+stripe_235_file_k8 stripe_235_file_m1 stripe_235_file_k9 stripe_235_file_k7 stripe_235_file_k3 stripe_235_file_k4 stripe_235_file_m3 stripe_235_file_m4 stripe_235_file_k5 stripe_235_file_k6  
+lostBlk: stripe_84_file_m4
+stripe_84_file_k1 stripe_84_file_k10 stripe_84_file_k4 stripe_84_file_k8 stripe_84_file_k6 stripe_84_file_m2 stripe_84_file_k9 stripe_84_file_k3 stripe_84_file_k2 stripe_84_file_k5  
+lostBlk: stripe_48_file_k9
+stripe_48_file_k3 stripe_48_file_m1 stripe_48_file_k6 stripe_48_file_k2 stripe_48_file_k8 stripe_48_file_m3 stripe_48_file_m4 stripe_48_file_k7 stripe_48_file_k5 stripe_48_file_k1  
+lostBlk: stripe_258_file_k9
+stripe_258_file_k7 stripe_258_file_k5 stripe_258_file_k2 stripe_258_file_k6 stripe_258_file_m1 stripe_258_file_k1 stripe_258_file_k4 stripe_258_file_k8 stripe_258_file_k10 stripe_258_file_k3  
+lostBlk: stripe_96_file_k1
+stripe_96_file_k2 stripe_96_file_k5 stripe_96_file_k7 stripe_96_file_k9 stripe_96_file_k10 stripe_96_file_k4 stripe_96_file_k3 stripe_96_file_m4 stripe_96_file_m1 stripe_96_file_k6  
+lostBlk: stripe_61_file_m2
+stripe_61_file_k1 stripe_61_file_k5 stripe_61_file_k10 stripe_61_file_m4 stripe_61_file_k9 stripe_61_file_k4 stripe_61_file_k2 stripe_61_file_k3 stripe_61_file_k7 stripe_61_file_k6  
+lostBlk: stripe_186_file_k8
+stripe_186_file_k9 stripe_186_file_k1 stripe_186_file_m1 stripe_186_file_k3 stripe_186_file_m3 stripe_186_file_k10 stripe_186_file_k2 stripe_186_file_k5 stripe_186_file_k6 stripe_186_file_k7  
+lostBlk: stripe_71_file_k6
+stripe_71_file_k4 stripe_71_file_k10 stripe_71_file_k8 stripe_71_file_k5 stripe_71_file_m4 stripe_71_file_k2 stripe_71_file_k9 stripe_71_file_k3 stripe_71_file_k1 stripe_71_file_k7  
+lostBlk: stripe_54_file_k8
+stripe_54_file_k6 stripe_54_file_k10 stripe_54_file_k9 stripe_54_file_k4 stripe_54_file_k5 stripe_54_file_k2 stripe_54_file_k3 stripe_54_file_k7 stripe_54_file_k1 stripe_54_file_m1  
+lostBlk: stripe_269_file_k3
+stripe_269_file_k7 stripe_269_file_m1 stripe_269_file_k10 stripe_269_file_k6 stripe_269_file_m4 stripe_269_file_k8 stripe_269_file_k2 stripe_269_file_k9 stripe_269_file_k4 stripe_269_file_k5  
+lostBlk: stripe_21_file_m4
+stripe_21_file_k8 stripe_21_file_m1 stripe_21_file_m3 stripe_21_file_k7 stripe_21_file_k6 stripe_21_file_k1 stripe_21_file_k3 stripe_21_file_k10 stripe_21_file_k2 stripe_21_file_k5  
+lostBlk: stripe_58_file_m2
+stripe_58_file_k4 stripe_58_file_k2 stripe_58_file_k3 stripe_58_file_k5 stripe_58_file_k8 stripe_58_file_k10 stripe_58_file_k9 stripe_58_file_k1 stripe_58_file_k6 stripe_58_file_k7  
+lostBlk: stripe_131_file_m3
+stripe_131_file_k7 stripe_131_file_k6 stripe_131_file_m2 stripe_131_file_m4 stripe_131_file_k5 stripe_131_file_k4 stripe_131_file_k1 stripe_131_file_k10 stripe_131_file_k2 stripe_131_file_k9  
+lostBlk: stripe_16_file_m2
+stripe_16_file_k8 stripe_16_file_k5 stripe_16_file_m1 stripe_16_file_m4 stripe_16_file_k1 stripe_16_file_k9 stripe_16_file_k2 stripe_16_file_k7 stripe_16_file_k6 stripe_16_file_k10  
+lostBlk: stripe_204_file_k7
+stripe_204_file_k10 stripe_204_file_m3 stripe_204_file_k4 stripe_204_file_k5 stripe_204_file_m1 stripe_204_file_k2 stripe_204_file_k3 stripe_204_file_k8 stripe_204_file_k6 stripe_204_file_k1  
+lostBlk: stripe_77_file_k10
+stripe_77_file_k8 stripe_77_file_k5 stripe_77_file_k3 stripe_77_file_k2 stripe_77_file_m1 stripe_77_file_k9 stripe_77_file_k6 stripe_77_file_k4 stripe_77_file_k7 stripe_77_file_k1  
+lostBlk: stripe_32_file_k2
+stripe_32_file_k7 stripe_32_file_k9 stripe_32_file_m3 stripe_32_file_k3 stripe_32_file_k6 stripe_32_file_k5 stripe_32_file_k1 stripe_32_file_k10 stripe_32_file_m1 stripe_32_file_k8  
+lostBlk: stripe_97_file_k10
+stripe_97_file_k5 stripe_97_file_k6 stripe_97_file_k8 stripe_97_file_m1 stripe_97_file_k4 stripe_97_file_k2 stripe_97_file_k1 stripe_97_file_k3 stripe_97_file_k7 stripe_97_file_k9  
+lostBlk: stripe_70_file_k4
+stripe_70_file_k6 stripe_70_file_k1 stripe_70_file_m2 stripe_70_file_k2 stripe_70_file_k3 stripe_70_file_k9 stripe_70_file_k8 stripe_70_file_m1 stripe_70_file_k7 stripe_70_file_k10  
+lostBlk: stripe_36_file_k4
+stripe_36_file_k8 stripe_36_file_k10 stripe_36_file_m1 stripe_36_file_k1 stripe_36_file_k2 stripe_36_file_k6 stripe_36_file_k3 stripe_36_file_k9 stripe_36_file_k7 stripe_36_file_k5  
+lostBlk: stripe_155_file_k1
+stripe_155_file_k7 stripe_155_file_k9 stripe_155_file_k8 stripe_155_file_m2 stripe_155_file_m3 stripe_155_file_k2 stripe_155_file_m1 stripe_155_file_k6 stripe_155_file_k3 stripe_155_file_k5  
+lostBlk: stripe_142_file_m2
+stripe_142_file_k3 stripe_142_file_k9 stripe_142_file_k1 stripe_142_file_k8 stripe_142_file_k6 stripe_142_file_k7 stripe_142_file_k5 stripe_142_file_k10 stripe_142_file_k2 stripe_142_file_k4  
+lostBlk: stripe_220_file_k8
+stripe_220_file_k10 stripe_220_file_k6 stripe_220_file_m3 stripe_220_file_m4 stripe_220_file_k9 stripe_220_file_k3 stripe_220_file_k2 stripe_220_file_k7 stripe_220_file_k1 stripe_220_file_k5  
+lostBlk: stripe_130_file_k5
+stripe_130_file_k10 stripe_130_file_k2 stripe_130_file_k9 stripe_130_file_k3 stripe_130_file_k6 stripe_130_file_k4 stripe_130_file_m1 stripe_130_file_k1 stripe_130_file_k7 stripe_130_file_k8  
+lostBlk: stripe_196_file_k5
+stripe_196_file_k8 stripe_196_file_k9 stripe_196_file_k1 stripe_196_file_k6 stripe_196_file_k4 stripe_196_file_k7 stripe_196_file_k10 stripe_196_file_k3 stripe_196_file_m1 stripe_196_file_k2  
+lostBlk: stripe_215_file_m4
+stripe_215_file_k2 stripe_215_file_k10 stripe_215_file_m1 stripe_215_file_k5 stripe_215_file_k4 stripe_215_file_k9 stripe_215_file_k6 stripe_215_file_k1 stripe_215_file_k7 stripe_215_file_k8  
+lostBlk: stripe_89_file_k10
+stripe_89_file_k9 stripe_89_file_m4 stripe_89_file_k8 stripe_89_file_k2 stripe_89_file_k5 stripe_89_file_k1 stripe_89_file_m1 stripe_89_file_k4 stripe_89_file_k7 stripe_89_file_k3  
+lostBlk: stripe_182_file_m4
+stripe_182_file_k1 stripe_182_file_k5 stripe_182_file_m1 stripe_182_file_k9 stripe_182_file_k3 stripe_182_file_k10 stripe_182_file_k8 stripe_182_file_k6 stripe_182_file_k4 stripe_182_file_k2  
+lostBlk: stripe_157_file_k2
+stripe_157_file_k7 stripe_157_file_k3 stripe_157_file_k10 stripe_157_file_k9 stripe_157_file_k4 stripe_157_file_k6 stripe_157_file_k1 stripe_157_file_m1 stripe_157_file_k5 stripe_157_file_k8  
+lostBlk: stripe_237_file_k10
+stripe_237_file_k3 stripe_237_file_m1 stripe_237_file_k8 stripe_237_file_k4 stripe_237_file_k1 stripe_237_file_k7 stripe_237_file_k5 stripe_237_file_k9 stripe_237_file_k2 stripe_237_file_k6  
+lostBlk: stripe_86_file_k6
+stripe_86_file_k7 stripe_86_file_k5 stripe_86_file_k9 stripe_86_file_k1 stripe_86_file_k4 stripe_86_file_k3 stripe_86_file_m1 stripe_86_file_k2 stripe_86_file_k10 stripe_86_file_k8  
+lostBlk: stripe_262_file_m4
+stripe_262_file_k10 stripe_262_file_k1 stripe_262_file_k4 stripe_262_file_k6 stripe_262_file_k7 stripe_262_file_k8 stripe_262_file_k5 stripe_262_file_k2 stripe_262_file_k3 stripe_262_file_k9  
+ !!!!!! sort cmds for each slave by repairTime 
+schedule  batch 3
+0slave_up_bd 124
+0slave_dw_bd 115
+1slave_up_bd 124
+1slave_dw_bd 115
+2slave_up_bd 124
+2slave_dw_bd 116
+3slave_up_bd 113
+3slave_dw_bd 116
+4slave_up_bd 123
+4slave_dw_bd 114
+5slave_up_bd 122
+5slave_dw_bd 116
+6slave_up_bd 125
+6slave_dw_bd 125
+7slave_up_bd 124
+7slave_dw_bd 116
+8slave_up_bd 82
+8slave_dw_bd 110
+9slave_up_bd 66
+9slave_dw_bd 107
+10slave_up_bd 72
+10slave_dw_bd 108
+11slave_up_bd 124
+11slave_dw_bd 116
+12slave_up_bd 123
+12slave_dw_bd 115
+13slave_up_bd 124
+13slave_dw_bd 116
+14slave_up_bd 124
+14slave_dw_bd 115
+15slave_up_bd 123
+15slave_dw_bd 116
+16slave_up_bd 124
+16slave_dw_bd 115
+17slave_up_bd 123
+17slave_dw_bd 115
+18slave_up_bd 124
+18slave_dw_bd 114
+getSlaveBDs finish !
+degree of stripe 105 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 1 0
+
+degree of stripe 106 : in, out
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 108 : in, out
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 110 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 111 : in, out
+ 1 1
+ 1 1
+ 3 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 112 : in, out
+ 2 1
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 113 : in, out
+ 1 1
+ 1 1
+ 4 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 114 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 115 : in, out
+ 1 1
+ 5 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 116 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 117 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 118 : in, out
+ 3 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 119 : in, out
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 121 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 122 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 123 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 124 : in, out
+ 1 1
+ 3 1
+ 1 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 125 : in, out
+ 2 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 126 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 127 : in, out
+ 2 1
+ 1 1
+ 3 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 128 : in, out
+ 1 1
+ 1 1
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 129 : in, out
+ 1 1
+ 3 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 130 : in, out
+ 3 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 131 : in, out
+ 3 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 132 : in, out
+ 1 1
+ 2 1
+ 4 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 133 : in, out
+ 1 1
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 134 : in, out
+ 1 1
+ 3 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 135 : in, out
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 136 : in, out
+ 3 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 138 : in, out
+ 4 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 140 : in, out
+ 4 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 141 : in, out
+ 2 1
+ 5 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 142 : in, out
+ 3 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 143 : in, out
+ 8 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 144 : in, out
+ 5 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 145 : in, out
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 146 : in, out
+ 3 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 147 : in, out
+ 4 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 148 : in, out
+ 6 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 149 : in, out
+ 1 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 5 0
+
+degree of stripe 150 : in, out
+ 5 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 151 : in, out
+ 4 1
+ 1 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 152 : in, out
+ 4 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 154 : in, out
+ 6 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 155 : in, out
+ 6 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 156 : in, out
+ 1 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 157 : in, out
+ 6 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 158 : in, out
+ 2 1
+ 1 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 159 : in, out
+ 6 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 164 : in, out
+ 6 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+remain cnt = 43
+node 0, up_time = 16.516, dw_time = 13.913 
+node 1, up_time = 14.452, dw_time = 16.139 
+node 2, up_time = 16.516, dw_time = 16.552 
+node 3, up_time = 0.000, dw_time = 0.000 
+node 4, up_time = 17.171, dw_time = 15.158 
+node 5, up_time = 12.590, dw_time = 17.655 
+node 6, up_time = 16.384, dw_time = 14.336 
+node 7, up_time = 13.419, dw_time = 15.448 
+node 8, up_time = 19.512, dw_time = 15.709 
+node 9, up_time = 19.394, dw_time = 14.355 
+node 10, up_time = 19.556, dw_time = 14.222 
+node 11, up_time = 16.516, dw_time = 15.448 
+node 12, up_time = 14.569, dw_time = 14.470 
+node 13, up_time = 14.452, dw_time = 16.000 
+node 14, up_time = 15.484, dw_time = 15.026 
+node 15, up_time = 14.049, dw_time = 17.655 
+node 16, up_time = 13.935, dw_time = 15.026 
+node 17, up_time = 13.528, dw_time = 16.139 
+node 18, up_time = 14.452, dw_time = 15.719 
+node 0, sum_dw = 25, sum_up = 32,  bd_dw = 115, bd_up = 124 
+node 1, sum_dw = 29, sum_up = 28,  bd_dw = 115, bd_up = 124 
+node 2, sum_dw = 30, sum_up = 32,  bd_dw = 116, bd_up = 124 
+node 3, sum_dw = 0, sum_up = 0,  bd_dw = 116, bd_up = 113 
+node 4, sum_dw = 27, sum_up = 33,  bd_dw = 114, bd_up = 123 
+node 5, sum_dw = 32, sum_up = 24,  bd_dw = 116, bd_up = 122 
+node 6, sum_dw = 28, sum_up = 32,  bd_dw = 125, bd_up = 125 
+node 7, sum_dw = 28, sum_up = 26,  bd_dw = 116, bd_up = 124 
+node 8, sum_dw = 27, sum_up = 25,  bd_dw = 110, bd_up = 82 
+node 9, sum_dw = 24, sum_up = 20,  bd_dw = 107, bd_up = 66 
+node 10, sum_dw = 24, sum_up = 22,  bd_dw = 108, bd_up = 72 
+node 11, sum_dw = 28, sum_up = 32,  bd_dw = 116, bd_up = 124 
+node 12, sum_dw = 26, sum_up = 28,  bd_dw = 115, bd_up = 123 
+node 13, sum_dw = 29, sum_up = 28,  bd_dw = 116, bd_up = 124 
+node 14, sum_dw = 27, sum_up = 30,  bd_dw = 115, bd_up = 124 
+node 15, sum_dw = 32, sum_up = 27,  bd_dw = 116, bd_up = 123 
+node 16, sum_dw = 27, sum_up = 27,  bd_dw = 115, bd_up = 124 
+node 17, sum_dw = 29, sum_up = 26,  bd_dw = 115, bd_up = 123 
+node 18, sum_dw = 28, sum_up = 28,  bd_dw = 114, bd_up = 124 
+all: indeg = 500 , outdeg = 500
+finish buildGraph!!!!!!!!!!
+finish initConf
+finish getEdgesWithoutDep
+500 finish the doScheduling
+lostBlk: stripe_135_file_k2
+stripe_135_file_k9 stripe_135_file_k10 stripe_135_file_k8 stripe_135_file_k3 stripe_135_file_m1 stripe_135_file_k5 stripe_135_file_k7 stripe_135_file_m2 stripe_135_file_m3 stripe_135_file_k4  
+lostBlk: stripe_95_file_k6
+stripe_95_file_k7 stripe_95_file_k4 stripe_95_file_k3 stripe_95_file_k10 stripe_95_file_k8 stripe_95_file_k5 stripe_95_file_m2 stripe_95_file_m1 stripe_95_file_k2 stripe_95_file_k9  
+lostBlk: stripe_233_file_k2
+stripe_233_file_k8 stripe_233_file_k5 stripe_233_file_k9 stripe_233_file_k6 stripe_233_file_k1 stripe_233_file_m2 stripe_233_file_m3 stripe_233_file_m4 stripe_233_file_m1 stripe_233_file_k3  
+lostBlk: stripe_221_file_k10
+stripe_221_file_k1 stripe_221_file_k8 stripe_221_file_k4 stripe_221_file_m2 stripe_221_file_m3 stripe_221_file_k5 stripe_221_file_k7 stripe_221_file_k2 stripe_221_file_k6 stripe_221_file_m1  
+lostBlk: stripe_62_file_k4
+stripe_62_file_m1 stripe_62_file_k6 stripe_62_file_k7 stripe_62_file_k2 stripe_62_file_k3 stripe_62_file_k8 stripe_62_file_k5 stripe_62_file_k9 stripe_62_file_k1 stripe_62_file_k10  
+lostBlk: stripe_244_file_m3
+stripe_244_file_k3 stripe_244_file_k9 stripe_244_file_k10 stripe_244_file_k2 stripe_244_file_m4 stripe_244_file_k5 stripe_244_file_k7 stripe_244_file_k6 stripe_244_file_k1 stripe_244_file_k4  
+lostBlk: stripe_118_file_m2
+stripe_118_file_k6 stripe_118_file_k3 stripe_118_file_k9 stripe_118_file_k8 stripe_118_file_k2 stripe_118_file_m1 stripe_118_file_k7 stripe_118_file_k10 stripe_118_file_k4 stripe_118_file_k5  
+lostBlk: stripe_106_file_k5
+stripe_106_file_k3 stripe_106_file_k8 stripe_106_file_k2 stripe_106_file_k10 stripe_106_file_k9 stripe_106_file_m3 stripe_106_file_k7 stripe_106_file_k1 stripe_106_file_m1 stripe_106_file_k4  
+lostBlk: stripe_251_file_m2
+stripe_251_file_k10 stripe_251_file_k4 stripe_251_file_k7 stripe_251_file_k3 stripe_251_file_k8 stripe_251_file_k2 stripe_251_file_k5 stripe_251_file_k1 stripe_251_file_k6 stripe_251_file_k9  
+lostBlk: stripe_272_file_k2
+stripe_272_file_k3 stripe_272_file_k10 stripe_272_file_k4 stripe_272_file_m3 stripe_272_file_m4 stripe_272_file_k5 stripe_272_file_m1 stripe_272_file_k8 stripe_272_file_k9 stripe_272_file_k1  
+lostBlk: stripe_128_file_k4
+stripe_128_file_m1 stripe_128_file_k8 stripe_128_file_k1 stripe_128_file_k2 stripe_128_file_k9 stripe_128_file_k3 stripe_128_file_k7 stripe_128_file_k10 stripe_128_file_k5 stripe_128_file_k6  
+lostBlk: stripe_210_file_m1
+stripe_210_file_k4 stripe_210_file_k2 stripe_210_file_k9 stripe_210_file_k3 stripe_210_file_k1 stripe_210_file_k7 stripe_210_file_k10 stripe_210_file_k6 stripe_210_file_k8 stripe_210_file_k5  
+lostBlk: stripe_51_file_k7
+stripe_51_file_k8 stripe_51_file_k5 stripe_51_file_k10 stripe_51_file_m2 stripe_51_file_m4 stripe_51_file_k3 stripe_51_file_k6 stripe_51_file_k2 stripe_51_file_k4 stripe_51_file_k1  
+lostBlk: stripe_8_file_k6
+stripe_8_file_k9 stripe_8_file_k5 stripe_8_file_m2 stripe_8_file_m3 stripe_8_file_m4 stripe_8_file_k7 stripe_8_file_k8 stripe_8_file_k4 stripe_8_file_k10 stripe_8_file_m1  
+lostBlk: stripe_2_file_k8
+stripe_2_file_k5 stripe_2_file_k10 stripe_2_file_k3 stripe_2_file_m4 stripe_2_file_k4 stripe_2_file_k2 stripe_2_file_m1 stripe_2_file_k6 stripe_2_file_k9 stripe_2_file_k1  
+lostBlk: stripe_255_file_k7
+stripe_255_file_k6 stripe_255_file_k8 stripe_255_file_k5 stripe_255_file_m1 stripe_255_file_m2 stripe_255_file_m4 stripe_255_file_k10 stripe_255_file_k2 stripe_255_file_k4 stripe_255_file_k1  
+lostBlk: stripe_63_file_m2
+stripe_63_file_k7 stripe_63_file_k4 stripe_63_file_k5 stripe_63_file_m1 stripe_63_file_m4 stripe_63_file_k1 stripe_63_file_k10 stripe_63_file_k2 stripe_63_file_k8 stripe_63_file_k3  
+lostBlk: stripe_213_file_k1
+stripe_213_file_k4 stripe_213_file_m3 stripe_213_file_m4 stripe_213_file_k10 stripe_213_file_m1 stripe_213_file_k2 stripe_213_file_k9 stripe_213_file_k3 stripe_213_file_k6 stripe_213_file_k7  
+lostBlk: stripe_112_file_m1
+stripe_112_file_k8 stripe_112_file_k9 stripe_112_file_k10 stripe_112_file_k2 stripe_112_file_k7 stripe_112_file_k6 stripe_112_file_k4 stripe_112_file_k1 stripe_112_file_k3 stripe_112_file_k5  
+lostBlk: stripe_40_file_k7
+stripe_40_file_k10 stripe_40_file_k9 stripe_40_file_m1 stripe_40_file_k4 stripe_40_file_m4 stripe_40_file_k2 stripe_40_file_k3 stripe_40_file_k5 stripe_40_file_k6 stripe_40_file_k1  
+lostBlk: stripe_3_file_k1
+stripe_3_file_k10 stripe_3_file_k5 stripe_3_file_k4 stripe_3_file_m2 stripe_3_file_k6 stripe_3_file_k9 stripe_3_file_k7 stripe_3_file_k2 stripe_3_file_m1 stripe_3_file_k8  
+lostBlk: stripe_100_file_m1
+stripe_100_file_k6 stripe_100_file_k8 stripe_100_file_k2 stripe_100_file_m3 stripe_100_file_k1 stripe_100_file_k4 stripe_100_file_k5 stripe_100_file_k9 stripe_100_file_k3 stripe_100_file_k10  
+lostBlk: stripe_167_file_m1
+stripe_167_file_k10 stripe_167_file_k4 stripe_167_file_k8 stripe_167_file_k9 stripe_167_file_k3 stripe_167_file_k6 stripe_167_file_k7 stripe_167_file_k1 stripe_167_file_k2 stripe_167_file_k5  
+lostBlk: stripe_211_file_k4
+stripe_211_file_k3 stripe_211_file_k10 stripe_211_file_m3 stripe_211_file_k9 stripe_211_file_k6 stripe_211_file_k1 stripe_211_file_k2 stripe_211_file_k8 stripe_211_file_k5 stripe_211_file_k7  
+lostBlk: stripe_202_file_k3
+stripe_202_file_k5 stripe_202_file_k9 stripe_202_file_k4 stripe_202_file_k10 stripe_202_file_k6 stripe_202_file_k1 stripe_202_file_k8 stripe_202_file_k2 stripe_202_file_k7 stripe_202_file_m1  
+lostBlk: stripe_199_file_k5
+stripe_199_file_k10 stripe_199_file_k3 stripe_199_file_m1 stripe_199_file_k2 stripe_199_file_k7 stripe_199_file_k1 stripe_199_file_k9 stripe_199_file_k8 stripe_199_file_k4 stripe_199_file_k6  
+lostBlk: stripe_46_file_k3
+stripe_46_file_k8 stripe_46_file_k2 stripe_46_file_k6 stripe_46_file_m4 stripe_46_file_k4 stripe_46_file_k1 stripe_46_file_k5 stripe_46_file_m1 stripe_46_file_k9 stripe_46_file_k7  
+lostBlk: stripe_174_file_m3
+stripe_174_file_k9 stripe_174_file_k1 stripe_174_file_k6 stripe_174_file_k7 stripe_174_file_k2 stripe_174_file_k4 stripe_174_file_k10 stripe_174_file_k3 stripe_174_file_k5 stripe_174_file_k8  
+lostBlk: stripe_239_file_k7
+stripe_239_file_k3 stripe_239_file_k4 stripe_239_file_m2 stripe_239_file_k10 stripe_239_file_m1 stripe_239_file_k8 stripe_239_file_k1 stripe_239_file_k5 stripe_239_file_k6 stripe_239_file_k2  
+lostBlk: stripe_80_file_k3
+stripe_80_file_k2 stripe_80_file_k1 stripe_80_file_k8 stripe_80_file_k10 stripe_80_file_k7 stripe_80_file_k5 stripe_80_file_k4 stripe_80_file_m1 stripe_80_file_k6 stripe_80_file_k9  
+lostBlk: stripe_159_file_m3
+stripe_159_file_k8 stripe_159_file_k10 stripe_159_file_k9 stripe_159_file_k5 stripe_159_file_k2 stripe_159_file_k7 stripe_159_file_k4 stripe_159_file_k1 stripe_159_file_k6 stripe_159_file_k3  
+lostBlk: stripe_200_file_k8
+stripe_200_file_m1 stripe_200_file_m3 stripe_200_file_m4 stripe_200_file_k9 stripe_200_file_k7 stripe_200_file_k10 stripe_200_file_k6 stripe_200_file_k4 stripe_200_file_k3 stripe_200_file_k1  
+lostBlk: stripe_234_file_k3
+stripe_234_file_k4 stripe_234_file_m3 stripe_234_file_m1 stripe_234_file_k8 stripe_234_file_k5 stripe_234_file_k7 stripe_234_file_k1 stripe_234_file_k9 stripe_234_file_k6 stripe_234_file_k2  
+lostBlk: stripe_137_file_m3
+stripe_137_file_k8 stripe_137_file_k6 stripe_137_file_k9 stripe_137_file_k3 stripe_137_file_k2 stripe_137_file_k4 stripe_137_file_k10 stripe_137_file_k5 stripe_137_file_k7 stripe_137_file_k1  
+lostBlk: stripe_39_file_k9
+stripe_39_file_k8 stripe_39_file_m3 stripe_39_file_k5 stripe_39_file_k7 stripe_39_file_k4 stripe_39_file_k3 stripe_39_file_m1 stripe_39_file_k10 stripe_39_file_k2 stripe_39_file_k6  
+lostBlk: stripe_67_file_k5
+stripe_67_file_k9 stripe_67_file_m3 stripe_67_file_k8 stripe_67_file_k3 stripe_67_file_m1 stripe_67_file_k6 stripe_67_file_k4 stripe_67_file_k10 stripe_67_file_k2 stripe_67_file_k1  
+lostBlk: stripe_101_file_k4
+stripe_101_file_k5 stripe_101_file_k9 stripe_101_file_k10 stripe_101_file_m1 stripe_101_file_k6 stripe_101_file_k7 stripe_101_file_k2 stripe_101_file_k8 stripe_101_file_k1 stripe_101_file_k3  
+lostBlk: stripe_94_file_m2
+stripe_94_file_k2 stripe_94_file_k1 stripe_94_file_k10 stripe_94_file_k4 stripe_94_file_k8 stripe_94_file_k7 stripe_94_file_k6 stripe_94_file_k3 stripe_94_file_k9 stripe_94_file_k5  
+lostBlk: stripe_166_file_m1
+stripe_166_file_k1 stripe_166_file_k4 stripe_166_file_k8 stripe_166_file_k5 stripe_166_file_k2 stripe_166_file_k9 stripe_166_file_k3 stripe_166_file_k7 stripe_166_file_k6 stripe_166_file_k10  
+lostBlk: stripe_79_file_k4
+stripe_79_file_k8 stripe_79_file_m2 stripe_79_file_k6 stripe_79_file_k5 stripe_79_file_k7 stripe_79_file_k9 stripe_79_file_k1 stripe_79_file_k3 stripe_79_file_k2 stripe_79_file_m1  
+lostBlk: stripe_19_file_k2
+stripe_19_file_k4 stripe_19_file_k3 stripe_19_file_k7 stripe_19_file_m1 stripe_19_file_k5 stripe_19_file_k10 stripe_19_file_k9 stripe_19_file_k1 stripe_19_file_k6 stripe_19_file_k8  
+lostBlk: stripe_44_file_k7
+stripe_44_file_m1 stripe_44_file_k8 stripe_44_file_m4 stripe_44_file_k4 stripe_44_file_k5 stripe_44_file_k10 stripe_44_file_k3 stripe_44_file_k2 stripe_44_file_k1 stripe_44_file_k6  
+lostBlk: stripe_152_file_m4
+stripe_152_file_k8 stripe_152_file_k2 stripe_152_file_k6 stripe_152_file_k4 stripe_152_file_k9 stripe_152_file_k1 stripe_152_file_k5 stripe_152_file_k3 stripe_152_file_k10 stripe_152_file_k7  
+lostBlk: stripe_263_file_m3
+stripe_263_file_k2 stripe_263_file_k1 stripe_263_file_k8 stripe_263_file_k4 stripe_263_file_k7 stripe_263_file_k10 stripe_263_file_k6 stripe_263_file_k5 stripe_263_file_k9 stripe_263_file_k3  
+lostBlk: stripe_85_file_m3
+stripe_85_file_k7 stripe_85_file_k1 stripe_85_file_k8 stripe_85_file_k6 stripe_85_file_k10 stripe_85_file_k2 stripe_85_file_k9 stripe_85_file_k3 stripe_85_file_k4 stripe_85_file_k5  
+lostBlk: stripe_189_file_m3
+stripe_189_file_k2 stripe_189_file_k6 stripe_189_file_k3 stripe_189_file_k4 stripe_189_file_k10 stripe_189_file_k8 stripe_189_file_k5 stripe_189_file_k9 stripe_189_file_k1 stripe_189_file_k7  
+lostBlk: stripe_116_file_k6
+stripe_116_file_k1 stripe_116_file_m3 stripe_116_file_k5 stripe_116_file_k2 stripe_116_file_k10 stripe_116_file_k4 stripe_116_file_m1 stripe_116_file_k8 stripe_116_file_k3 stripe_116_file_k7  
+lostBlk: stripe_240_file_k10
+stripe_240_file_k8 stripe_240_file_k5 stripe_240_file_k9 stripe_240_file_k4 stripe_240_file_k1 stripe_240_file_k3 stripe_240_file_k6 stripe_240_file_k7 stripe_240_file_k2 stripe_240_file_m1  
+lostBlk: stripe_120_file_k8
+stripe_120_file_k5 stripe_120_file_k1 stripe_120_file_k7 stripe_120_file_k9 stripe_120_file_k10 stripe_120_file_k6 stripe_120_file_k3 stripe_120_file_k2 stripe_120_file_k4 stripe_120_file_m1  
+lostBlk: stripe_22_file_m1
+stripe_22_file_k6 stripe_22_file_k1 stripe_22_file_k2 stripe_22_file_k9 stripe_22_file_k10 stripe_22_file_k7 stripe_22_file_k8 stripe_22_file_k5 stripe_22_file_k4 stripe_22_file_k3  
+ !!!!!! sort cmds for each slave by repairTime 
+schedule  batch 4
+0slave_up_bd 124
+0slave_dw_bd 115
+1slave_up_bd 124
+1slave_dw_bd 116
+2slave_up_bd 124
+2slave_dw_bd 115
+3slave_up_bd 113
+3slave_dw_bd 117
+4slave_up_bd 123
+4slave_dw_bd 115
+5slave_up_bd 122
+5slave_dw_bd 116
+6slave_up_bd 125
+6slave_dw_bd 125
+7slave_up_bd 124
+7slave_dw_bd 117
+8slave_up_bd 80
+8slave_dw_bd 110
+9slave_up_bd 70
+9slave_dw_bd 108
+10slave_up_bd 71
+10slave_dw_bd 109
+11slave_up_bd 124
+11slave_dw_bd 116
+12slave_up_bd 123
+12slave_dw_bd 115
+13slave_up_bd 124
+13slave_dw_bd 116
+14slave_up_bd 124
+14slave_dw_bd 115
+15slave_up_bd 123
+15slave_dw_bd 116
+16slave_up_bd 124
+16slave_dw_bd 115
+17slave_up_bd 123
+17slave_dw_bd 116
+18slave_up_bd 124
+18slave_dw_bd 114
+getSlaveBDs finish !
+degree of stripe 160 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 1 0
+
+degree of stripe 161 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 162 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 163 : in, out
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 165 : in, out
+ 1 1
+ 1 1
+ 3 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 166 : in, out
+ 2 1
+ 4 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 167 : in, out
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 168 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 169 : in, out
+ 2 1
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 170 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 171 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 1 0
+
+degree of stripe 172 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 173 : in, out
+ 1 1
+ 2 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 174 : in, out
+ 1 1
+ 2 1
+ 1 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 175 : in, out
+ 2 1
+ 2 1
+ 1 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 176 : in, out
+ 2 1
+ 1 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 177 : in, out
+ 2 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 178 : in, out
+ 1 1
+ 1 1
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 179 : in, out
+ 2 1
+ 3 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 180 : in, out
+ 1 1
+ 2 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 181 : in, out
+ 2 1
+ 3 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 182 : in, out
+ 3 1
+ 2 1
+ 2 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 183 : in, out
+ 1 1
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 184 : in, out
+ 2 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 185 : in, out
+ 4 1
+ 3 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 186 : in, out
+ 4 1
+ 1 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 188 : in, out
+ 2 1
+ 3 1
+ 1 1
+ 1 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 189 : in, out
+ 4 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 190 : in, out
+ 1 1
+ 4 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 191 : in, out
+ 1 1
+ 2 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 192 : in, out
+ 5 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 193 : in, out
+ 3 1
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 194 : in, out
+ 4 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 195 : in, out
+ 1 1
+ 3 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 196 : in, out
+ 2 1
+ 1 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 197 : in, out
+ 5 1
+ 1 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 198 : in, out
+ 3 1
+ 3 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 201 : in, out
+ 2 1
+ 6 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 2 0
+
+degree of stripe 202 : in, out
+ 4 1
+ 1 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 203 : in, out
+ 2 1
+ 5 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 3 0
+
+degree of stripe 204 : in, out
+ 2 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 4 0
+
+degree of stripe 205 : in, out
+ 1 1
+ 4 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 5 0
+
+degree of stripe 206 : in, out
+ 2 1
+ 2 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 0 1
+ 6 0
+
+remain cnt = 0
+node 0, up_time = 12.387, dw_time = 12.800 
+node 1, up_time = 12.903, dw_time = 13.793 
+node 2, up_time = 12.903, dw_time = 12.800 
+node 3, up_time = 0.000, dw_time = 0.000 
+node 4, up_time = 15.089, dw_time = 13.913 
+node 5, up_time = 11.541, dw_time = 13.793 
+node 6, up_time = 16.384, dw_time = 12.800 
+node 7, up_time = 10.839, dw_time = 13.128 
+node 8, up_time = 16.800, dw_time = 13.382 
+node 9, up_time = 15.543, dw_time = 11.852 
+node 10, up_time = 16.225, dw_time = 12.330 
+node 11, up_time = 12.387, dw_time = 12.690 
+node 12, up_time = 14.049, dw_time = 13.913 
+node 13, up_time = 12.387, dw_time = 13.241 
+node 14, up_time = 12.903, dw_time = 12.800 
+node 15, up_time = 11.447, dw_time = 12.690 
+node 16, up_time = 13.419, dw_time = 14.470 
+node 17, up_time = 13.008, dw_time = 13.241 
+node 18, up_time = 11.871, dw_time = 15.719 
+node 0, sum_dw = 23, sum_up = 24,  bd_dw = 115, bd_up = 124 
+node 1, sum_dw = 25, sum_up = 25,  bd_dw = 116, bd_up = 124 
+node 2, sum_dw = 23, sum_up = 25,  bd_dw = 115, bd_up = 124 
+node 3, sum_dw = 0, sum_up = 0,  bd_dw = 117, bd_up = 113 
+node 4, sum_dw = 25, sum_up = 29,  bd_dw = 115, bd_up = 123 
+node 5, sum_dw = 25, sum_up = 22,  bd_dw = 116, bd_up = 122 
+node 6, sum_dw = 25, sum_up = 32,  bd_dw = 125, bd_up = 125 
+node 7, sum_dw = 24, sum_up = 21,  bd_dw = 117, bd_up = 124 
+node 8, sum_dw = 23, sum_up = 21,  bd_dw = 110, bd_up = 80 
+node 9, sum_dw = 20, sum_up = 17,  bd_dw = 108, bd_up = 70 
+node 10, sum_dw = 21, sum_up = 18,  bd_dw = 109, bd_up = 71 
+node 11, sum_dw = 23, sum_up = 24,  bd_dw = 116, bd_up = 124 
+node 12, sum_dw = 25, sum_up = 27,  bd_dw = 115, bd_up = 123 
+node 13, sum_dw = 24, sum_up = 24,  bd_dw = 116, bd_up = 124 
+node 14, sum_dw = 23, sum_up = 25,  bd_dw = 115, bd_up = 124 
+node 15, sum_dw = 23, sum_up = 22,  bd_dw = 116, bd_up = 123 
+node 16, sum_dw = 26, sum_up = 26,  bd_dw = 115, bd_up = 124 
+node 17, sum_dw = 24, sum_up = 25,  bd_dw = 116, bd_up = 123 
+node 18, sum_dw = 28, sum_up = 23,  bd_dw = 114, bd_up = 124 
+all: indeg = 430 , outdeg = 430
+finish buildGraph!!!!!!!!!!
+finish initConf
+finish getEdgesWithoutDep
+430 finish the doScheduling
+lostBlk: stripe_209_file_k6
+stripe_209_file_k4 stripe_209_file_k5 stripe_209_file_k7 stripe_209_file_k3 stripe_209_file_k2 stripe_209_file_k8 stripe_209_file_m2 stripe_209_file_m3 stripe_209_file_m4 stripe_209_file_k10  
+lostBlk: stripe_37_file_k4
+stripe_37_file_k6 stripe_37_file_k1 stripe_37_file_m1 stripe_37_file_k9 stripe_37_file_m2 stripe_37_file_m4 stripe_37_file_k2 stripe_37_file_k5 stripe_37_file_k8 stripe_37_file_k3  
+lostBlk: stripe_141_file_m3
+stripe_141_file_k6 stripe_141_file_k4 stripe_141_file_k3 stripe_141_file_k10 stripe_141_file_k1 stripe_141_file_m1 stripe_141_file_m2 stripe_141_file_m4 stripe_141_file_k7 stripe_141_file_k9  
+lostBlk: stripe_124_file_m1
+stripe_124_file_k5 stripe_124_file_k2 stripe_124_file_k10 stripe_124_file_m2 stripe_124_file_m3 stripe_124_file_m4 stripe_124_file_k3 stripe_124_file_k4 stripe_124_file_k1 stripe_124_file_k9  
+lostBlk: stripe_42_file_m1
+stripe_42_file_k2 stripe_42_file_k9 stripe_42_file_k8 stripe_42_file_k1 stripe_42_file_k3 stripe_42_file_m2 stripe_42_file_m4 stripe_42_file_k7 stripe_42_file_k4 stripe_42_file_k6  
+lostBlk: stripe_9_file_k2
+stripe_9_file_k7 stripe_9_file_m1 stripe_9_file_k6 stripe_9_file_k10 stripe_9_file_k3 stripe_9_file_k9 stripe_9_file_k8 stripe_9_file_k4 stripe_9_file_k5 stripe_9_file_k1  
+lostBlk: stripe_242_file_k1
+stripe_242_file_k5 stripe_242_file_k7 stripe_242_file_k10 stripe_242_file_k6 stripe_242_file_m1 stripe_242_file_m2 stripe_242_file_k3 stripe_242_file_k9 stripe_242_file_k8 stripe_242_file_k4  
+lostBlk: stripe_144_file_k6
+stripe_144_file_k8 stripe_144_file_k7 stripe_144_file_k1 stripe_144_file_k10 stripe_144_file_k5 stripe_144_file_m3 stripe_144_file_m4 stripe_144_file_k4 stripe_144_file_m1 stripe_144_file_k2  
+lostBlk: stripe_56_file_k1
+stripe_56_file_k5 stripe_56_file_k7 stripe_56_file_m2 stripe_56_file_m3 stripe_56_file_m4 stripe_56_file_m1 stripe_56_file_k2 stripe_56_file_k6 stripe_56_file_k9 stripe_56_file_k8  
+lostBlk: stripe_249_file_k6
+stripe_249_file_k2 stripe_249_file_k7 stripe_249_file_k5 stripe_249_file_m2 stripe_249_file_m3 stripe_249_file_m4 stripe_249_file_k9 stripe_249_file_k3 stripe_249_file_k4 stripe_249_file_m1  
+lostBlk: stripe_74_file_k6
+stripe_74_file_k9 stripe_74_file_k7 stripe_74_file_k8 stripe_74_file_k5 stripe_74_file_m2 stripe_74_file_m3 stripe_74_file_m4 stripe_74_file_m1 stripe_74_file_k1 stripe_74_file_k2  
+lostBlk: stripe_168_file_m4
+stripe_168_file_k6 stripe_168_file_k3 stripe_168_file_k4 stripe_168_file_m1 stripe_168_file_m3 stripe_168_file_k1 stripe_168_file_k10 stripe_168_file_k8 stripe_168_file_k9 stripe_168_file_k7  
+lostBlk: stripe_207_file_k7
+stripe_207_file_k4 stripe_207_file_k5 stripe_207_file_k2 stripe_207_file_m1 stripe_207_file_k6 stripe_207_file_k1 stripe_207_file_k10 stripe_207_file_k3 stripe_207_file_k8 stripe_207_file_k9  
+lostBlk: stripe_81_file_k6
+stripe_81_file_m1 stripe_81_file_k4 stripe_81_file_k5 stripe_81_file_m2 stripe_81_file_m3 stripe_81_file_k2 stripe_81_file_k10 stripe_81_file_k9 stripe_81_file_k7 stripe_81_file_k1  
+lostBlk: stripe_134_file_m1
+stripe_134_file_k8 stripe_134_file_k10 stripe_134_file_k1 stripe_134_file_k7 stripe_134_file_k3 stripe_134_file_k4 stripe_134_file_k2 stripe_134_file_k6 stripe_134_file_k9 stripe_134_file_k5  
+lostBlk: stripe_227_file_m3
+stripe_227_file_k9 stripe_227_file_k5 stripe_227_file_k10 stripe_227_file_k7 stripe_227_file_m1 stripe_227_file_k2 stripe_227_file_k1 stripe_227_file_k4 stripe_227_file_k6 stripe_227_file_k3  
+lostBlk: stripe_197_file_k5
+stripe_197_file_k4 stripe_197_file_k1 stripe_197_file_m4 stripe_197_file_k6 stripe_197_file_k9 stripe_197_file_k8 stripe_197_file_k7 stripe_197_file_k3 stripe_197_file_k2 stripe_197_file_m1  
+lostBlk: stripe_43_file_k8
+stripe_43_file_m1 stripe_43_file_k10 stripe_43_file_k9 stripe_43_file_k4 stripe_43_file_k5 stripe_43_file_k2 stripe_43_file_k7 stripe_43_file_k3 stripe_43_file_k1 stripe_43_file_k6  
+lostBlk: stripe_7_file_k2
+stripe_7_file_k7 stripe_7_file_k10 stripe_7_file_m3 stripe_7_file_k3 stripe_7_file_k8 stripe_7_file_k4 stripe_7_file_m1 stripe_7_file_k1 stripe_7_file_k6 stripe_7_file_k5  
+lostBlk: stripe_4_file_k2
+stripe_4_file_m1 stripe_4_file_k1 stripe_4_file_k4 stripe_4_file_k8 stripe_4_file_k6 stripe_4_file_k3 stripe_4_file_k10 stripe_4_file_k9 stripe_4_file_k5 stripe_4_file_k7  
+lostBlk: stripe_45_file_k6
+stripe_45_file_k7 stripe_45_file_k4 stripe_45_file_m2 stripe_45_file_m3 stripe_45_file_m1 stripe_45_file_k2 stripe_45_file_k10 stripe_45_file_k8 stripe_45_file_k9 stripe_45_file_k1  
+lostBlk: stripe_259_file_k10
+stripe_259_file_k4 stripe_259_file_k5 stripe_259_file_k8 stripe_259_file_m4 stripe_259_file_m1 stripe_259_file_k3 stripe_259_file_k1 stripe_259_file_k2 stripe_259_file_k9 stripe_259_file_k7  
+lostBlk: stripe_121_file_k3
+stripe_121_file_k8 stripe_121_file_k7 stripe_121_file_m3 stripe_121_file_k2 stripe_121_file_k4 stripe_121_file_k1 stripe_121_file_m1 stripe_121_file_k10 stripe_121_file_k6 stripe_121_file_k5  
+lostBlk: stripe_90_file_k2
+stripe_90_file_k4 stripe_90_file_k9 stripe_90_file_k7 stripe_90_file_k1 stripe_90_file_k5 stripe_90_file_k6 stripe_90_file_k10 stripe_90_file_m1 stripe_90_file_k8 stripe_90_file_k3  
+lostBlk: stripe_25_file_m2
+stripe_25_file_k7 stripe_25_file_k1 stripe_25_file_k6 stripe_25_file_k3 stripe_25_file_k9 stripe_25_file_k10 stripe_25_file_k8 stripe_25_file_k2 stripe_25_file_k4 stripe_25_file_k5  
+lostBlk: stripe_195_file_m2
+stripe_195_file_k7 stripe_195_file_k1 stripe_195_file_m4 stripe_195_file_k8 stripe_195_file_k9 stripe_195_file_k5 stripe_195_file_k6 stripe_195_file_k10 stripe_195_file_k2 stripe_195_file_k4  
+lostBlk: stripe_55_file_m4
+stripe_55_file_k4 stripe_55_file_k10 stripe_55_file_k9 stripe_55_file_k6 stripe_55_file_m2 stripe_55_file_k7 stripe_55_file_k3 stripe_55_file_k2 stripe_55_file_k5 stripe_55_file_k8  
+lostBlk: stripe_183_file_m4
+stripe_183_file_k7 stripe_183_file_k3 stripe_183_file_k2 stripe_183_file_k1 stripe_183_file_k6 stripe_183_file_k5 stripe_183_file_k8 stripe_183_file_k4 stripe_183_file_k9 stripe_183_file_k10  
+lostBlk: stripe_35_file_k4
+stripe_35_file_k9 stripe_35_file_k10 stripe_35_file_k7 stripe_35_file_k3 stripe_35_file_k6 stripe_35_file_k1 stripe_35_file_m1 stripe_35_file_k8 stripe_35_file_k2 stripe_35_file_k5  
+lostBlk: stripe_0_file_k1
+stripe_0_file_k4 stripe_0_file_m3 stripe_0_file_m4 stripe_0_file_k5 stripe_0_file_k10 stripe_0_file_k2 stripe_0_file_m1 stripe_0_file_k7 stripe_0_file_k9 stripe_0_file_k3  
+lostBlk: stripe_230_file_k7
+stripe_230_file_k1 stripe_230_file_m2 stripe_230_file_k10 stripe_230_file_k9 stripe_230_file_k4 stripe_230_file_k2 stripe_230_file_k8 stripe_230_file_k5 stripe_230_file_k3 stripe_230_file_m1  
+lostBlk: stripe_260_file_k2
+stripe_260_file_k5 stripe_260_file_k3 stripe_260_file_m1 stripe_260_file_k4 stripe_260_file_k9 stripe_260_file_k1 stripe_260_file_k6 stripe_260_file_k8 stripe_260_file_k10 stripe_260_file_k7  
+lostBlk: stripe_69_file_k9
+stripe_69_file_k1 stripe_69_file_k7 stripe_69_file_k6 stripe_69_file_k8 stripe_69_file_k10 stripe_69_file_k4 stripe_69_file_k2 stripe_69_file_k5 stripe_69_file_k3 stripe_69_file_m1  
+lostBlk: stripe_148_file_k6
+stripe_148_file_k1 stripe_148_file_m1 stripe_148_file_k10 stripe_148_file_k8 stripe_148_file_k5 stripe_148_file_k2 stripe_148_file_k9 stripe_148_file_k4 stripe_148_file_k3 stripe_148_file_k7  
+lostBlk: stripe_236_file_k7
+stripe_236_file_k5 stripe_236_file_k6 stripe_236_file_m4 stripe_236_file_k1 stripe_236_file_m1 stripe_236_file_k4 stripe_236_file_k8 stripe_236_file_k9 stripe_236_file_k3 stripe_236_file_k2  
+lostBlk: stripe_162_file_k8
+stripe_162_file_k2 stripe_162_file_m3 stripe_162_file_k9 stripe_162_file_k6 stripe_162_file_m1 stripe_162_file_k3 stripe_162_file_k1 stripe_162_file_k4 stripe_162_file_k7 stripe_162_file_k5  
+lostBlk: stripe_224_file_k2
+stripe_224_file_k6 stripe_224_file_k1 stripe_224_file_k5 stripe_224_file_k8 stripe_224_file_k3 stripe_224_file_k9 stripe_224_file_k4 stripe_224_file_k10 stripe_224_file_k7 stripe_224_file_m1  
+lostBlk: stripe_87_file_k4
+stripe_87_file_k3 stripe_87_file_k8 stripe_87_file_k5 stripe_87_file_k1 stripe_87_file_k6 stripe_87_file_k2 stripe_87_file_k10 stripe_87_file_k7 stripe_87_file_m1 stripe_87_file_k9  
+lostBlk: stripe_273_file_k1
+stripe_273_file_k7 stripe_273_file_k10 stripe_273_file_m2 stripe_273_file_k6 stripe_273_file_k8 stripe_273_file_k9 stripe_273_file_k2 stripe_273_file_k5 stripe_273_file_k4 stripe_273_file_m1  
+lostBlk: stripe_123_file_m3
+stripe_123_file_k5 stripe_123_file_k10 stripe_123_file_k2 stripe_123_file_k7 stripe_123_file_k1 stripe_123_file_k6 stripe_123_file_k8 stripe_123_file_k3 stripe_123_file_k4 stripe_123_file_k9  
+lostBlk: stripe_138_file_k10
+stripe_138_file_k4 stripe_138_file_k9 stripe_138_file_k1 stripe_138_file_k6 stripe_138_file_k8 stripe_138_file_k5 stripe_138_file_k3 stripe_138_file_k7 stripe_138_file_k2 stripe_138_file_m1  
+lostBlk: stripe_271_file_m2
+stripe_271_file_k6 stripe_271_file_k10 stripe_271_file_k4 stripe_271_file_k1 stripe_271_file_k7 stripe_271_file_k3 stripe_271_file_k2 stripe_271_file_k5 stripe_271_file_k8 stripe_271_file_k9  
+lostBlk: stripe_18_file_k1
+stripe_18_file_k3 stripe_18_file_m4 stripe_18_file_k2 stripe_18_file_k7 stripe_18_file_k5 stripe_18_file_k4 stripe_18_file_m1 stripe_18_file_k9 stripe_18_file_k6 stripe_18_file_k10  
+ !!!!!! sort cmds for each slave by repairTime 
+schedule  batch 5
+solveFullNodeRequest end 
+waiting for requests ...
+requestHandler empty queue 
+waiting for requests ...
+Coordinator::CmdDistributor() empty queue 
+requestHandler empty queue 
+waiting for requests ...
+Coordinator::CmdDistributor() empty queue 
+requestHandler empty queue 
+waiting for requests ...
+Coordinator::CmdDistributor() empty queue 
